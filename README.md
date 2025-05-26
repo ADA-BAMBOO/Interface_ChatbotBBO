@@ -1,4 +1,4 @@
-#💬 Interface_ChatbotBBO — GovernCardanoBot Integration Template for n8n
+💬#Interface_ChatbotBBO — GovernCardanoBot Integration Template for n8n
 
 GovernCardanoBot is an intelligent virtual assistant designed to provide clear and accurate answers related to the Cardano blockchain and its governance system. Whether you're an investor or a tech enthusiast, it helps you stay informed and engaged with Cardano’s ecosystem and decision-making processes.
 

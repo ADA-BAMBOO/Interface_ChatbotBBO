@@ -1,11 +1,11 @@
-💬 Interface_ChatbotBBO — GovernCardanoBot Integration Template for n8n
+#💬 Interface_ChatbotBBO — GovernCardanoBot Integration Template for n8n
 
 GovernCardanoBot is an intelligent virtual assistant designed to provide clear and accurate answers related to the Cardano blockchain and its governance system. Whether you're an investor or a tech enthusiast, it helps you stay informed and engaged with Cardano’s ecosystem and decision-making processes.
 
 To make this system accessible to users with limited programming experience, we've developed a ready-to-use interface template for n8n, focusing on reusability, fast deployment, and minimal coding requirements. This solution simplifies the development of governance-related chatbots and supports integration with external services.
 
 
-🧰 Prerequisites
+#🧰 Prerequisites
 
 🖥️ Server Requirements
 
@@ -32,7 +32,7 @@ To make this system accessible to users with limited programming experience, we'
 - Integration with Google Sheets/Docs API, if needed
 
 
-🧠 Recommended Technical Skills
+#🧠 Recommended Technical Skills
 
 - To deploy and customize the chatbot effectively, users should have a basic understanding of:
 
@@ -51,7 +51,7 @@ To make this system accessible to users with limited programming experience, we'
 - Familiarity with tools such as n8n, Telegram Bots, and Google API Services
 
 
-🚀 Setup & Deployment Guide
+#🚀 Setup & Deployment Guide
 
 Follow these steps to deploy the GovernCardanoBot interface template on your server:
 
@@ -77,7 +77,7 @@ You can use a basic docker-compose.yml or a production-ready version with SSL an
 - Set up database connections (PostgreSQL or Supabase)
 
 
-📁 Template Highlights
+#📁 Template Highlights
 
 - Pre-built workflows for chatbot interaction
 
@@ -87,7 +87,7 @@ You can use a basic docker-compose.yml or a production-ready version with SSL an
 
 - Focused on governance-related use cases in the Cardano ecosystem
 
-🔐 Security Notes
+#🔐 Security Notes
 
 - Enable Basic Auth for n8n if exposed to the public
 
@@ -95,7 +95,7 @@ You can use a basic docker-compose.yml or a production-ready version with SSL an
 
 - Keep API keys and environment variables secure
 
-🧩 Extensibility Ideas
+#🧩 Extensibility Ideas
 
 - Add multilingual support using AI translation models
 
@@ -105,7 +105,7 @@ You can use a basic docker-compose.yml or a production-ready version with SSL an
 
 - Use webhooks for real-time governance notifications
 
-📚 Resources
+#📚 Resources
 
 n8n Documentation: https://docs.n8n.io/
 
@@ -114,5 +114,7 @@ Koios API Docs: https://api.koios.rest/
 Telegram Bot API: https://core.telegram.org/bots/api
 
 Google Sheets API: https://developers.google.com/sheets/api
+
+Feel free to fork, extend, and customize this template to build your own Cardano governance tools. If you need help with advanced deployment (e.g., using external DBs, CI/CD pipelines, load balancing), don’t hesitate to reach out or contribute to the project.
 
 

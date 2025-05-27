@@ -3,18 +3,18 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## ADA - Bamboo: Telegram Chatbot Template\n\nMô tả sản phẩm:\n\nADA - Bamboo: Telegram Chatbot Template là một giải pháp mẫu (template) toàn diện được thiết kế nhằm giúp các nhà phát triển nhanh chóng xây dựng và triển khai chatbot trên nền tảng Telegram. Template này cung cấp một workflow hoàn chỉnh, hỗ trợ tự động hóa các tác vụ giao tiếp với người dùng, xử lý ngôn ngữ tự nhiên (NLP), và tích hợp dễ dàng với các công cụ AI hiện đại.\n\nVới kiến trúc linh hoạt và dễ tùy biến, chatbot được xây dựng từ template này có thể nhận và phản hồi tin nhắn từ người dùng một cách thông minh, phù hợp với nhiều mục đích sử dụng khác nhau như chăm sóc khách hàng, trợ lý ảo cá nhân, hỗ trợ kỹ thuật, hoặc tạo trải nghiệm tương tác trong các chiến dịch marketing,...\n\nNhóm phát triển:\nADA - Bamboo Team",
-        "height": 400,
-        "width": 620,
-        "color": 4
+        "content": "ADA - Bamboo: Telegram Chatbot @GovernCardanoBot Template\n\nProduct Introduction\nADA - Bamboo: Telegram Chatbot Template is a comprehensive, ready-to-use solution designed to help developers quickly build and deploy effective chatbots on the Telegram platform. This template provides a complete workflow, supporting the automation of user interactions, natural language processing (NLP), and seamless integration with modern AI tools.\n\nWith a flexible architecture and high customizability, chatbots developed from this template can intelligently receive and respond to messages, making them suitable for various purposes. These include customer service, personal virtual assistants, technical support, or creating engaging interactive experiences for marketing campaigns.\n\nDevelopment Team\nADA - Bamboo Team\n\nTemplate Structure\nThe template is organized into clear functional sections, facilitating easy management and development:\n\n- Command Functionality (Yellow): Focuses on processing commands from users such as /start, /help, /command, etc.\n- Button Functionality (Blue): Handles actions triggered by buttons (callback queries) within the application interface.\n- Koios API Integration (Purple): Processes button actions (callback queries) to connect with the Koios API, retrieving information about DReps, SPOs, and more.\n- Automated Notifications (Green): Manages the sending of automated notifications to users and administrators.\n- AI Question Answering (Red and Gray): Handles the function of answering user questions, connected to a local AI for analysis and accurate response generation.\n",
+        "height": 520,
+        "width": 1360,
+        "color": 2
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -12300,
-        -1200
+        -5660,
+        940
       ],
-      "id": "ce02fd61-b282-4ecf-9a79-722f779e20d5",
+      "id": "1760d1a4-b0e0-42f3-aabc-c546fefd33cc",
       "name": "Sticky Note"
     },
     {
@@ -248,10 +248,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        -2420,
-        -1720
+        1740,
+        3040
       ],
-      "id": "be35c895-f35d-43b7-a6bf-82d56fc6a38c",
+      "id": "7838b423-d033-40ee-be1f-02e7593fb857",
       "name": "Switch"
     },
     {
@@ -266,10 +266,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -1000,
-        -1740
+        3160,
+        3020
       ],
-      "id": "0c13a6f3-2f21-4d65-91e3-2fc9bc36b95d",
+      "id": "f7f00e82-c379-4366-a940-c3dd9f3eacce",
       "name": "Message_Response",
       "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
       "credentials": {
@@ -290,10 +290,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -1560,
-        -1740
+        2600,
+        3020
       ],
-      "id": "1b1f31c2-ea28-44d7-bb29-549592aeacef",
+      "id": "e131f11a-2558-4259-9d92-159500e2803c",
       "name": "AI Agent"
     },
     {
@@ -302,15 +302,14 @@
         "description": "Contains all the user's documents that you can check for context to answer user questions.",
         "topK": 5
       },
-      "id": "1611d4cd-e155-4f60-9fca-caa9b0ee2edf",
+      "id": "63d792dc-5ef4-44dd-aa1b-31ac99bcba26",
       "name": "Retrieve Documents",
       "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
       "typeVersion": 1,
       "position": [
-        -14180,
-        -1340
-      ],
-      "disabled": true
+        3100,
+        3280
+      ]
     },
     {
       "parameters": {
@@ -319,18 +318,17 @@
       "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -14020,
-        -1060
+        2600,
+        3400
       ],
-      "id": "b73d5fd5-7b93-481d-984c-964bcafd4f20",
+      "id": "27c32934-1d42-4fdb-bd29-d0fd38f7f190",
       "name": "Embeddings Google Gemini",
       "credentials": {
         "googlePalmApi": {
           "id": "Nk7Pd9f1YTDyhp5Z",
           "name": "Google Gemini(PaLM) Api account 2"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -347,33 +345,32 @@
       "type": "@n8n/n8n-nodes-langchain.vectorStoreSupabase",
       "typeVersion": 1.1,
       "position": [
-        -14380,
-        -1160
+        2680,
+        3380
       ],
-      "id": "f828e5e3-7410-4b69-94cb-ea5b78a06857",
+      "id": "d584f99c-3771-405e-a16e-b44cc7962ca6",
       "name": "Supabase Vector Store",
       "credentials": {
         "supabaseApi": {
           "id": "nldB6zRahygpLVhq",
           "name": "Supabase  Phuc's account "
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
         "content": "Ai Agent: Trả lời câu hỏi từ nguiowf dùng. ",
-        "height": 500,
-        "width": 1080,
+        "height": 660,
+        "width": 1220,
         "color": 3
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -1880,
-        -1840
+        2280,
+        2920
       ],
-      "id": "9f18cb65-61f1-4bdf-b1aa-ae32fc2d0836",
+      "id": "959917ed-a7db-4e51-8b1b-461de1977da6",
       "name": "Sticky Note1"
     },
     {
@@ -388,10 +385,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -7280,
-        -1440
+        -3120,
+        3320
       ],
-      "id": "a4f7d7ae-7e5a-4cfe-b54a-1f8745fe92e5",
+      "id": "8d951f9b-2fb1-4b76-837b-6fd77844d4ea",
       "name": "Feedback",
       "webhookId": "62f2f445-ebcc-490f-94d9-b872584941c2",
       "credentials": {
@@ -460,10 +457,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -2140,
-        -3000
+        2020,
+        1760
       ],
-      "id": "814bab60-2e48-4f06-b497-d98561e035bf",
+      "id": "b3d7a160-71cf-44e8-858c-97301993a5e8",
       "name": "Mes_Help_Vi",
       "webhookId": "f5873235-81ab-4df1-9a14-0faba1a22440",
       "credentials": {
@@ -532,10 +529,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -2140,
-        -2760
+        2020,
+        2000
       ],
-      "id": "d6e8c92d-fc02-443c-b005-9a0a3afcfc4f",
+      "id": "954e4df7-2e4c-4b72-b462-6e14df8b6679",
       "name": "Mes_Help_En",
       "webhookId": "af626b78-9e16-4ece-a5f2-20e84be686c2",
       "credentials": {
@@ -604,10 +601,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -2100,
-        -2360
+        2060,
+        2400
       ],
-      "id": "be29cec1-8039-45ae-aa59-7be6da6e5863",
+      "id": "0e633739-cf4d-4b11-a585-55e9696fc7b8",
       "name": "Mes_Start_Vi",
       "webhookId": "9aaeac83-1fbc-4d81-84c8-8ce9e483c4f0",
       "credentials": {
@@ -676,10 +673,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -2100,
-        -2140
+        2060,
+        2620
       ],
-      "id": "0a7efd79-658f-4c75-b34c-cb2382c4387b",
+      "id": "9d1d933d-434b-4caf-987f-cac811107799",
       "name": "Mes_Start_En",
       "webhookId": "43fd4346-caa5-4fe8-bb11-50516dded99c",
       "credentials": {
@@ -718,10 +715,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -2340,
-        -2260
+        1820,
+        2500
       ],
-      "id": "4b3c621d-c953-4d5b-bec2-0ad74359e334",
+      "id": "68265f24-cf07-4802-84e4-87038a8bf3d1",
       "name": "If_Lang_Start"
     },
     {
@@ -755,10 +752,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -2480,
-        -2900
+        1680,
+        1860
       ],
-      "id": "d573f249-d691-4ea9-b332-88298f0741d1",
+      "id": "6f22dbc7-5b24-4ba7-a85e-223eaa76534f",
       "name": "If_Lang_Help"
     },
     {
@@ -789,10 +786,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -3400,
-        -960
+        760,
+        3800
       ],
-      "id": "b6494ff3-e4e5-4b60-8e22-defc1a97d3bb",
+      "id": "a1aa5a6e-2ede-4827-9db4-3a359eadc8a7",
       "name": "If_Command"
     },
     {
@@ -807,10 +804,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3100,
-        -1080
+        1060,
+        3680
       ],
-      "id": "51b881d7-7daa-48e1-abbd-696978b8c535",
+      "id": "0e14b494-e9ec-47ce-8c31-b612f401fb6d",
       "name": "Mes_Com_Vi",
       "webhookId": "5cb2f9c7-1cf2-4778-9728-5fb36c6dfe0d",
       "credentials": {
@@ -849,10 +846,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -2520,
-        -3440
+        1640,
+        1320
       ],
-      "id": "91eeaffa-8f02-4524-8384-ba4a3b30186b",
+      "id": "44a6ea37-a30e-4da2-8b37-b803b3c64760",
       "name": "If_Find"
     },
     {
@@ -944,10 +941,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -1940,
-        -3540
+        2140,
+        1220
       ],
-      "id": "92ce9792-7225-4035-92c4-143364f21f42",
+      "id": "301b3765-2454-4c37-afcd-d61e442974c3",
       "name": "Mes_Filter_Vi",
       "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
       "credentials": {
@@ -956,648 +953,6 @@
           "name": "Governance account"
         }
       }
-    },
-    {
-      "parameters": {
-        "rules": {
-          "values": [
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "43971887-fc2e-43e1-b60d-6104718be51a",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "drep",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "update_role_drep"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "6d8b60af-d577-48d4-bdad-8e71ca3db48f",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "user",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "update_role_user"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "77ddf974-c91c-4420-a893-490942895c89",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "holder",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "update_role_holder"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "7ef27a92-6637-4b1d-8076-a066237c2dd1",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "spo",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "update_role_spo"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "925fdbcf-0a04-48c9-a379-50d2623bf16a",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "committe",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "update_role_commitee"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_1",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals"
-                    },
-                    "id": "c72141dd-492a-4390-997f-775ccb1953dc"
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_1"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "ad68c644-450e-4de9-901a-1663bd7ab8cd",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_2",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_2"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "c195872b-f8e9-4af3-a12b-55d87d2edfe1",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_3",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_3"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "5b032f40-8be2-428b-9046-7a8ec4893b51",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_4",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_4"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "d4becd1d-5cad-4c57-942a-8b830d86519f",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_5",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_5"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "b2ff9c42-6241-4f26-8fa1-2dbf08c6f2f1",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_6",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_6"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "032336e1-655a-4398-8597-e467b6c5636e",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_7",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_7"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "8575e42a-3d74-4064-9675-60c76d9d89c5",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_8",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_8"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "c37e0b83-dfa4-417f-98c6-95823cee1571",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_9",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_9"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "f730606f-357b-4447-948b-bf57535648e7",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "question_10",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "question_10"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "93bedd55-6468-4d24-97cb-ef0339a9b06b",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "api_drepinformation",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Drep information"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "59f6143d-3267-4a35-a109-c063b6420770",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "DReps_Delegators",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "List of DReps Delegators"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "e2dfd848-e658-49df-8617-c6e61484aeb1",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "voter_proposal_list",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Voter's Proposal List"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "be0f4c98-3c78-4056-85a1-cc8d3b13fb4d",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "Drep_voting_power_history",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Voting Power History"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "5ed02c11-bbb8-4e3c-b66f-112742bb7202",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "epoch_params",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Information About Epoch"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "7e739a5d-ebd0-4e42-bf13-c8f48bd63131",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "api_spoinformation",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "SPO information"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "5ec8d20d-8102-4dd5-a0ea-d2736825cbab",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "SPO_voting_power_history",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Voting Power History"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "05e0055f-14f2-46ba-8451-0647e19407a2",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "pool_delegators",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Pool Delegators List"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "800870da-0eea-4c90-a9af-a3e1703ef082",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "api_CCinformation",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Committee Information"
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "loose",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "cfac96e3-197d-45e3-ab05-f866f544ebb7",
-                    "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.data }}",
-                    "rightValue": "committee_votes",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              },
-              "renameOutput": true,
-              "outputKey": "Committee Votes"
-            }
-          ]
-        },
-        "looseTypeValidation": true,
-        "options": {}
-      },
-      "type": "n8n-nodes-base.switch",
-      "typeVersion": 3.2,
-      "position": [
-        -8160,
-        3280
-      ],
-      "id": "b7be1492-066b-40ae-965d-7ba71a9769de",
-      "name": "Switch_Question"
     },
     {
       "parameters": {
@@ -1611,10 +966,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3100,
-        -880
+        1060,
+        3880
       ],
-      "id": "cb896f5a-e5da-431b-ae77-d7e097e8eb89",
+      "id": "6442a4ac-a120-46f6-878c-4f70b21da6dd",
       "name": "Mes_Com_En",
       "webhookId": "e1fc9523-010b-413c-b405-06b3723cdbcc",
       "credentials": {
@@ -1652,10 +1007,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -9760,
-        -1260
+        -5600,
+        3500
       ],
-      "id": "ccef3b7e-271f-4894-acaa-272356bf7e5b",
+      "id": "1a5a1314-9227-455d-a601-6d8ecf8d4b97",
       "name": "If_Call_Help"
     },
     {
@@ -1717,10 +1072,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9800,
-        -1460
+        -5640,
+        3300
       ],
-      "id": "0c4950c0-6d0d-438b-b20f-1dd8282015d4",
+      "id": "690c310b-0751-4ad6-9ee0-0534d76df733",
       "name": "Help_Vi",
       "webhookId": "e657a6e3-a1d4-4e12-9fed-45d3b8780bf2",
       "credentials": {
@@ -1789,10 +1144,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9500,
-        -1240
+        -5340,
+        3520
       ],
-      "id": "666421de-2b70-4e45-a394-7178b2a660b8",
+      "id": "881525a4-5a7b-4761-a8b8-6ba6d3f93bb8",
       "name": "Help_En",
       "webhookId": "e657a6e3-a1d4-4e12-9fed-45d3b8780bf2",
       "credentials": {
@@ -1830,78 +1185,11 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -8960,
-        -1240
+        -4800,
+        3520
       ],
-      "id": "a3e65b3c-6ff8-4315-b84b-1df7d3e7863a",
+      "id": "c6535725-84e8-4e96-937b-729f6c01701a",
       "name": "If_Call_Filter"
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "loose",
-            "version": 2
-          },
-          "conditions": [
-            {
-              "id": "7f056af3-75d6-438b-bfc7-8556f1c94508",
-              "leftValue": "={{ $('Telegram Trigger').item.json.callback_query.from.language_code }}",
-              "rightValue": "vi",
-              "operator": {
-                "type": "string",
-                "operation": "equals",
-                "name": "filter.operator.equals"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
-        "looseTypeValidation": true,
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.2,
-      "position": [
-        -4720,
-        3760
-      ],
-      "id": "984f8269-fb87-4c6b-a76d-60760278f23d",
-      "name": "If_Que"
-    },
-    {
-      "parameters": {
-        "mode": "raw",
-        "jsonOutput": "={\n  \"text_message\": \"{{ $('Telegram Trigger').item.json.callback_query.data === 'question_1' ? 'What is the Cardano Constitution?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_2' ? 'Why does Cardano need a constitution?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_3' ? 'Who can participate in voting on Cardano?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_4' ? 'How can changes be proposed in Cardano?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_5' ? 'Can the Cardano Constitution be changed?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_6' ? 'What is Voltaire, and how is it related to the Constitution?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_7' ? 'How does Cardano Treasury fund work?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_8' ? 'How can one participate in Cardano governance?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_9' ? 'Is there any organization overseeing the Cardano Constitution?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_10' ? 'Does the Constitution help Cardano resist centralization?' : \n    'Invalid question' }}\"\n}\n",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        -4500,
-        3920
-      ],
-      "id": "d667796e-207e-4ab3-aaa0-f0c4c6904a19",
-      "name": "Set_Question_Text_En",
-      "alwaysOutputData": false
-    },
-    {
-      "parameters": {
-        "mode": "raw",
-        "jsonOutput": "={\n  \"text_message\": \"{{ $('Telegram Trigger').item.json.callback_query.data === 'question_1' ? 'Hiến pháp Cardano là gì?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_2' ? 'Tại sao Cardano cần một hiến pháp?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_3' ? 'Ai có thể tham gia vào việc bỏ phiếu trên Cardano?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_4' ? 'Làm thế nào để đề xuất thay đổi trên Cardano?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_5' ? 'Hiến pháp Cardano có thể thay đổi không?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_6' ? 'Voltaire là gì và nó liên quan đến Hiến pháp ra sao?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_7' ? 'Quỹ Treasury của Cardano hoạt động như thế nào?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_8' ? 'Làm thế nào để tham gia vào việc quản trị Cardano?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_9' ? 'Có tổ chức nào giám sát Hiến pháp Cardano không?' : \n    $('Telegram Trigger').item.json.callback_query.data === 'question_10' ? 'Hiến pháp có giúp Cardano chống lại sự kiểm soát tập trung không?' : \n    'Câu hỏi không hợp lệ' }}\"\n}\n",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        -4500,
-        3580
-      ],
-      "id": "8beb5615-85c1-4a9c-ba46-140b47173780",
-      "name": "Set_Question_Text_Vi",
-      "alwaysOutputData": false
     },
     {
       "parameters": {
@@ -1915,10 +1203,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3580,
-        3580
+        -360,
+        1960
       ],
-      "id": "a61da7d2-1bcb-47ef-87af-0ec395d0409a",
+      "id": "108d835d-c7c9-4563-a599-a576cc2b2a07",
       "name": "Message_Response1",
       "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
       "credentials": {
@@ -1939,10 +1227,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -4140,
-        3580
+        -1180,
+        1960
       ],
-      "id": "64a55516-3057-40ac-aaeb-b92f8e56da76",
+      "id": "c699a879-2d0c-4d83-ad2e-0efea4f87d27",
       "name": "AI Agent1"
     },
     {
@@ -1954,10 +1242,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
       "typeVersion": 1.3,
       "position": [
-        -3980,
-        3800
+        -1060,
+        2080
       ],
-      "id": "350b0ad4-410b-45e6-aca6-29b1d649f5e8",
+      "id": "90764af5-c683-4bf5-93a2-77aef09bafef",
       "name": "Postgres Chat Memory1",
       "credentials": {
         "postgres": {
@@ -1976,10 +1264,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -1580,
-        -1520
+        2620,
+        3180
       ],
-      "id": "4c1be7ec-330f-4e2f-b339-48571a02321e",
+      "id": "f3b40a8a-29d9-4a6b-b37e-358340d41e95",
       "name": "Google Gemini Chat Model",
       "credentials": {
         "googlePalmApi": {
@@ -1998,37 +1286,15 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -4120,
-        3800
+        -1180,
+        2080
       ],
-      "id": "07f1511d-33dc-418f-8b53-375bfbf1be27",
+      "id": "c4b45f8c-bb1e-4bda-af6a-27b609564046",
       "name": "Google Gemini Chat Model1",
       "credentials": {
         "googlePalmApi": {
           "id": "Nk7Pd9f1YTDyhp5Z",
           "name": "Google Gemini(PaLM) Api account 2"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "operation": "executeQuery",
-        "query": "=SELECT EXISTS (\n    SELECT 1 FROM bbo_user WHERE telegramid = {{ $('Telegram Trigger').item.json.message.chat.id }}\n) AS user_exists;",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.postgres",
-      "typeVersion": 2.6,
-      "position": [
-        -1880,
-        -2260
-      ],
-      "id": "0ebf18f0-48a3-4f51-a252-2881e2f19817",
-      "name": "check_exist",
-      "alwaysOutputData": true,
-      "credentials": {
-        "postgres": {
-          "id": "y0YF1F4MKK5YeslP",
-          "name": "Postgres account"
         }
       }
     },
@@ -2063,10 +1329,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -1700,
-        -2260
+        2460,
+        2500
       ],
-      "id": "b800cb3f-ffbf-457b-a572-5da67e03ff46",
+      "id": "354fa877-5861-48d7-b8c5-a5adee11d4cc",
       "name": "If_exist"
     },
     {
@@ -2189,10 +1455,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -1460,
-        -2280
+        2700,
+        2480
       ],
-      "id": "11f57045-2d89-4a31-a2f7-5f651ac9ac0c",
+      "id": "4d4e0f25-11b9-4832-ba2b-652876ba183d",
       "name": "Insert_user",
       "credentials": {
         "postgres": {
@@ -2210,10 +1476,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -2500,
-        -2560
+        1660,
+        2200
       ],
-      "id": "743fb1a8-47df-43aa-986b-b2a77bbfabb0",
+      "id": "c1b956b6-c3df-4826-a1ff-c93e9d49dbea",
       "name": "Sticky Note4"
     },
     {
@@ -2225,25 +1491,25 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -2580,
-        -3120
+        1580,
+        1640
       ],
-      "id": "c79888c6-2625-46c8-b82a-d4568f58fd67",
+      "id": "adcc74f5-c2a6-4e37-9771-ad9dd7c81e6b",
       "name": "Sticky Note5"
     },
     {
       "parameters": {
         "content": "✨ Lệnh /find ✨ \nHệ thống sẽ đề xuất những câu hỏi phổ biến, phù hợp với nhu cầu của bạn nhằm giúp bạn bắt đầu cuộc trò chuyện dễ dàng hơn.",
         "height": 440,
-        "width": 920
+        "width": 1060
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -2640,
-        -3620
+        1520,
+        1140
       ],
-      "id": "69b1caa7-5426-46da-9e96-a530dbb120e0",
+      "id": "5b425066-b4cb-4af0-b062-c2fb4f0abd69",
       "name": "Sticky Note6"
     },
     {
@@ -2274,10 +1540,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -3180,
-        -4440
+        980,
+        320
       ],
-      "id": "18524465-4774-4aa4-85ae-55616021a299",
+      "id": "80ab70f4-e055-4aca-9b1e-4a871d716586",
       "name": "If1"
     },
     {
@@ -2289,10 +1555,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -2560,
-        -3960
+        1600,
+        800
       ],
-      "id": "24e9fd58-3c1b-4e3c-9633-bc47227c410d",
+      "id": "d488bed8-ef09-41be-997c-1d8bc8aaefe5",
       "name": "Postgres",
       "credentials": {
         "postgres": {
@@ -2420,10 +1686,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -2960,
-        -4460
+        1200,
+        300
       ],
-      "id": "b667a1e5-8738-4f90-9200-b2dc28590137",
+      "id": "f601f67e-6771-40dd-aa7c-147da7952495",
       "name": "Telegram",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -2552,10 +1818,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3220,
-        -4620
+        940,
+        140
       ],
-      "id": "a105ef4c-a111-47f3-85d0-cb880f67019d",
+      "id": "7c15a6b1-6286-4fc8-ba90-fb04222ad69a",
       "name": "Telegram1",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -2574,10 +1840,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -4160,
-        -4760
+        0,
+        0
       ],
-      "id": "74f1751c-45d6-4448-9e7a-d89dea8bdc59",
+      "id": "b113091a-f736-41b2-bca5-e2bc711cbafb",
       "name": "Sticky Note7"
     },
     {
@@ -2591,10 +1857,10 @@
       "type": "n8n-nodes-base.telegramTrigger",
       "typeVersion": 1.1,
       "position": [
-        -5660,
-        -1560
+        -1500,
+        3200
       ],
-      "id": "1f33c1c6-186b-48f2-9874-8e412a170f20",
+      "id": "ae6312f9-ba88-47f0-b46b-b776702ad901",
       "name": "Telegram Trigger",
       "webhookId": "1db700b1-cda0-417b-b14b-daf24bc24b8a",
       "credentials": {
@@ -2613,10 +1879,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -3480,
-        -1100
+        680,
+        3660
       ],
-      "id": "8d5cac02-08f6-4b05-a6b5-f84c7a8138a7",
+      "id": "e350a624-cff8-4535-999e-282f3b1352fb",
       "name": "Sticky Note8"
     },
     {
@@ -2628,10 +1894,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -9940,
-        -440
+        -5780,
+        4320
       ],
-      "id": "1db48177-eedb-43d3-b804-16ec24f22a64",
+      "id": "deb63091-dd82-411b-a50a-ce4b8cc339b2",
       "name": "Postgres3",
       "credentials": {
         "postgres": {
@@ -2669,10 +1935,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -7980,
-        -1240
+        -3820,
+        3520
       ],
-      "id": "386cfb35-6192-445a-ae4f-4ac4e4623a38",
+      "id": "1f326616-11b9-446b-975c-5ddce868de49",
       "name": "If3"
     },
     {
@@ -2740,10 +2006,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -8020,
-        -1440
+        -3860,
+        3320
       ],
-      "id": "35a13b5c-ae08-4f00-a50c-23181d0b2f24",
+      "id": "c87be16d-a1e3-4168-8830-0654e5ebb9d3",
       "name": "Telegram2",
       "webhookId": "e56b0648-3759-4ff3-aa8f-546cf2cd2e4d",
       "credentials": {
@@ -2818,10 +2084,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -7720,
-        -1220
+        -3560,
+        3540
       ],
-      "id": "bd9a13e7-21ea-4a32-93aa-43482e8585f6",
+      "id": "f06e5555-465a-4500-82e9-0af88bda0f96",
       "name": "Telegram3",
       "webhookId": "e56b0648-3759-4ff3-aa8f-546cf2cd2e4d",
       "credentials": {
@@ -2860,10 +2126,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -4080,
-        -940
+        80,
+        3820
       ],
-      "id": "95d21f2c-a779-4c62-b5ce-3f680e6433f5",
+      "id": "8f5d7efc-6786-4045-9fde-5fd76bf06aad",
       "name": "If4"
     },
     {
@@ -2878,10 +2144,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -4320,
-        -1040
+        -160,
+        3720
       ],
-      "id": "89591495-01ae-4919-9cbf-1b09a374337e",
+      "id": "b847888f-f0c3-4bb6-8eff-03cbb1de069e",
       "name": "Telegram4",
       "webhookId": "a8af2b2c-e39b-4c93-9b2a-70e92b0d968e",
       "credentials": {
@@ -2903,10 +2169,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3840,
-        -920
+        320,
+        3840
       ],
-      "id": "dd062f9f-1516-4157-ad52-30d4c8eb0852",
+      "id": "fb266898-d62c-4844-a42d-adfcce800f7e",
       "name": "Telegram5",
       "webhookId": "a8af2b2c-e39b-4c93-9b2a-70e92b0d968e",
       "credentials": {
@@ -2925,10 +2191,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -4400,
-        -1100
+        -240,
+        3660
       ],
-      "id": "bcb45c2f-cdec-47ac-8260-31b9990b5273",
+      "id": "f8d6ae5a-120d-442b-ab89-70b02c03730d",
       "name": "Sticky Note9"
     },
     {
@@ -2960,10 +2226,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -3580,
-        -440
+        580,
+        4320
       ],
-      "id": "3369abbb-eb14-4ccb-a3c2-c64e338b160b",
+      "id": "c8504885-2020-4ace-897b-b81da5a3b842",
       "name": "If5"
     },
     {
@@ -2978,10 +2244,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3360,
-        -580
+        800,
+        4180
       ],
-      "id": "297f913a-8303-47f0-86da-9192ca71c77e",
+      "id": "b23d0e26-9f0b-4f13-95e6-9a61ecb1ee1a",
       "name": "Telegram7",
       "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
       "credentials": {
@@ -3071,10 +2337,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -3020,
-        -440
+        1140,
+        4320
       ],
-      "id": "bed75dc6-be2f-4410-8e23-44289187a14d",
+      "id": "7c090ae2-97be-4bb1-828a-f8ba9a35ff48",
       "name": "Postgres4",
       "credentials": {
         "postgres": {
@@ -3095,10 +2361,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3360,
-        -300
+        800,
+        4460
       ],
-      "id": "cfb0a583-165c-4879-bf61-bc64641d98ae",
+      "id": "17883023-fa17-4fd0-8097-07431885a713",
       "name": "Telegram8",
       "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
       "credentials": {
@@ -3117,10 +2383,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -3720,
-        -660
+        440,
+        4100
       ],
-      "id": "e18cf8df-8466-4c31-a612-ead5b6be7b04",
+      "id": "850ede77-4ef9-4832-90b4-5025653e7541",
       "name": "Sticky Note10"
     },
     {
@@ -3151,10 +2417,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -7240,
-        -1220
+        -3080,
+        3540
       ],
-      "id": "15ef5f60-a5ab-4db0-b9bc-545f77e204ae",
+      "id": "b4f2c837-2d96-44c5-a6b4-c15f2c221edf",
       "name": "If6"
     },
     {
@@ -3168,10 +2434,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -6940,
-        -1200
+        -2780,
+        3560
       ],
-      "id": "09eb6e8a-15a0-4799-856d-f6792640a6c6",
+      "id": "5e4b583e-9915-4c41-a6bb-45b4531f3278",
       "name": "Feedback1",
       "webhookId": "62f2f445-ebcc-490f-94d9-b872584941c2",
       "credentials": {
@@ -3180,22 +2446,6 @@
           "name": "Governance account"
         }
       }
-    },
-    {
-      "parameters": {
-        "content": "AI Agent: Trả lời câu hởi từ câu hỏi gợi ý",
-        "height": 900,
-        "width": 1840,
-        "color": 5
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -5160,
-        3340
-      ],
-      "id": "200289c9-dfd4-4b2e-b2dc-c93e62aa0864",
-      "name": "Sticky Note2"
     },
     {
       "parameters": {
@@ -3329,10 +2579,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -8480,
-        700
+        -4320,
+        5460
       ],
-      "id": "ca4c865b-cdca-4285-a402-67a63a35a3c4",
+      "id": "24f139ed-06c1-4d64-95df-b49f968ab5a0",
       "name": "Postgres6",
       "credentials": {
         "postgres": {
@@ -3353,10 +2603,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -8180,
-        80
+        -4020,
+        4840
       ],
-      "id": "244e26e3-726d-4f79-8d51-621451a6a91b",
+      "id": "ec07688f-107a-4a73-b64c-3aec9ef2277c",
       "name": "Telegram6",
       "webhookId": "c47f6a2e-0f37-49fa-9835-c430c760876e",
       "credentials": {
@@ -3395,10 +2645,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -8180,
-        700
+        -4020,
+        5460
       ],
-      "id": "a5b33f37-458c-49f3-abc1-4668347dda4d",
+      "id": "26fdd23f-043e-48ef-9cc2-363e5e7d5038",
       "name": "If7"
     },
     {
@@ -3412,10 +2662,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -8180,
-        1080
+        -4020,
+        5840
       ],
-      "id": "8cb8b6c7-3c96-4fcf-99d9-e7ef69fdcee5",
+      "id": "d01d28f2-967f-4dd1-b4e8-714df1513a0d",
       "name": "Telegram9",
       "webhookId": "c47f6a2e-0f37-49fa-9835-c430c760876e",
       "credentials": {
@@ -3558,10 +2808,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -8480,
-        340
+        -4320,
+        5100
       ],
-      "id": "addd1c40-458e-40d9-81f8-5394bbe53364",
+      "id": "28287caa-01a8-4a43-874d-80fd01831c76",
       "name": "Postgres7",
       "credentials": {
         "postgres": {
@@ -3599,10 +2849,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -8180,
-        340
+        -4020,
+        5100
       ],
-      "id": "ea79cbb0-3418-4d87-b02c-63468a307e13",
+      "id": "f9525aa9-c4dc-4c61-b1e3-e9d31c77ab42",
       "name": "If8"
     },
     {
@@ -3611,7 +2861,7 @@
           "interval": [
             {
               "triggerAtHour": 23,
-              "triggerAtMinute": 50
+              "triggerAtMinute": 59
             }
           ]
         }
@@ -3619,10 +2869,10 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
-        -12180,
-        -460
+        -5520,
+        1720
       ],
-      "id": "ecd72de4-7cc2-47ea-9d38-d78d61dc7bca",
+      "id": "31e18256-8655-410a-83ea-4b1079968a26",
       "name": "Schedule Trigger",
       "disabled": true
     },
@@ -3635,18 +2885,17 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -11920,
-        -460
+        -5260,
+        1720
       ],
-      "id": "fc4f3e5e-3e0c-4af1-a3c1-73dff573b4cd",
+      "id": "1e2fc87a-14e5-4b83-b79c-22f5121c4a63",
       "name": "Postgres8",
       "credentials": {
         "postgres": {
           "id": "y0YF1F4MKK5YeslP",
           "name": "Postgres account"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -3676,10 +2925,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -11240,
-        -460
+        -4580,
+        1720
       ],
-      "id": "44e64d0b-20ec-4939-848f-ed51b39340ed",
+      "id": "672cea3e-c4e3-439e-ae15-4d5d1a453d1a",
       "name": "Telegram10",
       "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
       "credentials": {
@@ -3687,8 +2936,7 @@
           "id": "Jo4kWcVNJK0H8Qnp",
           "name": "Governance account"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -3697,27 +2945,26 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -11700,
-        -460
+        -5040,
+        1720
       ],
-      "id": "4492c469-2980-4379-8e2a-e5e6166c3a9c",
-      "name": "Code",
-      "disabled": true
+      "id": "0b0a52bb-f278-4a09-aec5-cd92181b58e6",
+      "name": "Code"
     },
     {
       "parameters": {
-        "content": "✨Workflow cập nhật điểm cho user: ✨\n\nQuy tắc:\n- 1 requesst = 1 BBO. \n- Điểm 1 user có thể đạt tối đang là 50BBO/day (có thể tùy chỉnh). Nếu vượt quá vẫn tính 50BBO - Việc này tránh user spam để kiếm điểm thưởng. Nếu thấp hơn 50BBO thì cộng điểm bình thường.\n- Hàm này sẽ chạy vào lúc 23h30 tối.\n- Nếu user có đóng góp tích cực --> Sau testnet BBO-Team lọc và tính điểm thưởng thêm.\n",
-        "height": 460,
+        "content": "✨Workflow cập nhật điểm cho user: ✨\n\n",
+        "height": 360,
         "width": 1360,
         "color": 4
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -12300,
-        -700
+        -5640,
+        1580
       ],
-      "id": "bab79a6f-b8ca-462e-bb3d-e047f605eb7c",
+      "id": "7f83703e-0386-4d8c-a793-edbfc872420a",
       "name": "Sticky Note12"
     },
     {
@@ -3748,10 +2995,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -7280,
-        0
+        -1820,
+        5120
       ],
-      "id": "89e0f64f-0ef1-4fc1-9484-2deb8da80269",
+      "id": "75f17de8-cc46-4acf-9ab2-e504466a509a",
       "name": "If9"
     },
     {
@@ -3763,10 +3010,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7020,
-        -20
+        -1560,
+        5100
       ],
-      "id": "2c3224d1-15a8-4213-8382-008c7c386d7c",
+      "id": "d8e36344-ca26-40eb-848b-5c5f1e13ab74",
       "name": "Postgres9",
       "credentials": {
         "postgres": {
@@ -3782,10 +3029,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -6540,
-        -20
+        -1060,
+        5100
       ],
-      "id": "00049edc-e65a-45c2-a459-357a65764338",
+      "id": "1f9cb585-4e7c-44c9-b8de-5c1d4236be37",
       "name": "Code1"
     },
     {
@@ -3804,10 +3051,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -6340,
-        -20
+        -860,
+        5100
       ],
-      "id": "033ce376-6168-4a14-b224-c8bbf7416c71",
+      "id": "23dad4ce-6b83-452c-9002-0e3722555f4f",
       "name": "Telegram11",
       "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
       "credentials": {
@@ -3824,10 +3071,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -6780,
-        -20
+        -1300,
+        5100
       ],
-      "id": "146de5c6-3f33-4d99-887d-97c8f437a29e",
+      "id": "448298bb-4dc2-44c2-8e32-d374efd0bf32",
       "name": "codefunction"
     },
     {
@@ -3840,10 +3087,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -7420,
-        -180
+        -1960,
+        4940
       ],
-      "id": "5db2a327-ef8f-4f43-888f-f991b12287ae",
+      "id": "95f7d42a-c0ad-4d60-b5d1-b37ec3bb11d9",
       "name": "Sticky Note13"
     },
     {
@@ -3859,10 +3106,10 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
-        -12520,
-        60
+        -5420,
+        2200
       ],
-      "id": "dc38981f-497f-4318-85fd-8b29c1683678",
+      "id": "ab3995b0-5008-4461-94cb-b6a14f0d699d",
       "name": "Schedule Trigger2",
       "disabled": true
     },
@@ -3880,12 +3127,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        -12280,
-        100
+        -5180,
+        2240
       ],
-      "id": "55e1b169-c096-4a39-894f-04e249b6a2d0",
-      "name": "GetProposals1",
-      "disabled": true
+      "id": "725913e7-f8ca-49ee-92c4-282dcdb6e337",
+      "name": "GetProposals1"
     },
     {
       "parameters": {
@@ -3900,18 +3146,17 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        -12280,
-        -80
+        -5180,
+        2060
       ],
-      "id": "7b58fb06-61ec-495b-ad40-ec1812dc908b",
+      "id": "5584bd7a-c5f6-4cca-ad8f-cb071bd55757",
       "name": "GetStoredProposals1",
       "credentials": {
         "googleDriveOAuth2Api": {
           "id": "kzS8bqtgiQVezuXt",
           "name": "Google Drive  tre viet account"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -3920,12 +3165,11 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -11460,
-        100
+        -4360,
+        2240
       ],
-      "id": "a4a09584-0a84-4190-bfdd-003b61837b8d",
-      "name": "CompareProposals1",
-      "disabled": true
+      "id": "d400c613-148a-43a4-bc1d-b78f9da017ba",
+      "name": "CompareProposals1"
     },
     {
       "parameters": {
@@ -3955,12 +3199,11 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -11220,
-        100
+        -4120,
+        2240
       ],
-      "id": "65515880-4f05-48c7-9243-b0a9718dc216",
-      "name": "If11",
-      "disabled": true
+      "id": "8957658d-3172-4f9f-92b6-165cb1d04d92",
+      "name": "If11"
     },
     {
       "parameters": {
@@ -3977,18 +3220,17 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        -11840,
-        380
+        -4740,
+        2520
       ],
-      "id": "42dde4e4-3991-4654-951b-39798282cfcb",
+      "id": "cb87de0d-3bf7-4f34-a1ec-6b600a2d694f",
       "name": "Google Drive1",
       "credentials": {
         "googleDriveOAuth2Api": {
           "id": "kzS8bqtgiQVezuXt",
           "name": "Google Drive  tre viet account"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -4000,10 +3242,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -12740,
-        -140
+        -5640,
+        2000
       ],
-      "id": "93347628-40c1-4223-8bdf-c11b763f4b99",
+      "id": "e34f841c-3e3f-47bd-ae57-e9960fa297ce",
       "name": "Sticky Note14"
     },
     {
@@ -4023,12 +3265,11 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -12260,
-        380
+        -5160,
+        2520
       ],
-      "id": "44d2d5d7-2083-4dfd-b2ec-a15c01efe21d",
-      "name": "set_convert",
-      "disabled": true
+      "id": "f678e30e-4388-441e-bda7-93412362e1e5",
+      "name": "set_convert"
     },
     {
       "parameters": {
@@ -4039,12 +3280,11 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        -12060,
-        380
+        -4960,
+        2520
       ],
-      "id": "6f5b49a6-69c2-480f-96b5-a00e4dfdc570",
-      "name": "Convert to File",
-      "disabled": true
+      "id": "6d26d331-6395-4821-99cf-5b31c8172eba",
+      "name": "Convert to File"
     },
     {
       "parameters": {
@@ -4055,18 +3295,17 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -11620,
-        380
+        -4520,
+        2520
       ],
-      "id": "52c49ca3-0c56-40cc-8e3c-195b66ba4da3",
+      "id": "e6d4222d-eb36-4f90-bd6b-7cf03f458e52",
       "name": "Postgres10",
       "credentials": {
         "postgres": {
           "id": "y0YF1F4MKK5YeslP",
           "name": "Postgres account"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -4075,12 +3314,11 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -11420,
-        380
+        -4320,
+        2520
       ],
-      "id": "a044aa7d-5c0e-4b1c-abce-686e9166a02e",
-      "name": "Code2",
-      "disabled": true
+      "id": "73c1242e-c3e6-4a0f-88ff-0b854d2c1c84",
+      "name": "Code2"
     },
     {
       "parameters": {
@@ -4093,10 +3331,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -11240,
-        380
+        -4140,
+        2520
       ],
-      "id": "9f7eeace-f133-4224-aad2-3bb02d864bf9",
+      "id": "2580c0c7-11af-4378-a717-ad5e796f634b",
       "name": "Telegram12",
       "webhookId": "39b523aa-eac0-4098-8a55-2bc1efb8091b",
       "credentials": {
@@ -4104,8 +3342,7 @@
           "id": "xlTMBHvEal44w0FQ",
           "name": "Phuc Bot"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -4116,12 +3353,11 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        -12060,
-        -80
+        -4960,
+        2060
       ],
-      "id": "f9659c17-7fdc-48b0-a836-a1498a758e58",
-      "name": "jsonconvertold",
-      "disabled": true
+      "id": "424f69b2-de2b-4459-beab-59448b097031",
+      "name": "jsonconvertold"
     },
     {
       "parameters": {
@@ -4140,12 +3376,11 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -11820,
-        -80
+        -4720,
+        2060
       ],
-      "id": "b6a94141-7432-432f-9a0e-091514656cc0",
-      "name": "set_convert1",
-      "disabled": true
+      "id": "521e9ab9-270b-49f1-aa37-83b87649c85f",
+      "name": "set_convert1"
     },
     {
       "parameters": {
@@ -4154,12 +3389,11 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -11600,
-        -80
+        -4500,
+        2060
       ],
-      "id": "8d4dedf4-d8db-4b5b-8f2b-b01f23315dd6",
-      "name": "CodeConvert",
-      "disabled": true
+      "id": "ac81e8a6-4fcc-4eff-b5a0-e21a8cf7a2e6",
+      "name": "CodeConvert"
     },
     {
       "parameters": {
@@ -4168,12 +3402,11 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -12500,
-        380
+        -5400,
+        2520
       ],
-      "id": "619d0027-d52a-4b7d-a529-99161457aa5b",
-      "name": "newProposal",
-      "disabled": true
+      "id": "a819a6a1-328c-4b78-8e34-08cfe31fea03",
+      "name": "newProposal"
     },
     {
       "parameters": {
@@ -4183,18 +3416,17 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -13860,
-        -1180
+        3180,
+        3360
       ],
-      "id": "6779ce22-a3c6-4163-ba4b-f90b636e379e",
+      "id": "397a20b3-bd72-4ac9-8211-613956e404ef",
       "name": "Google Gemini Chat Model2",
       "credentials": {
         "googlePalmApi": {
           "id": "Nk7Pd9f1YTDyhp5Z",
           "name": "Google Gemini(PaLM) Api account 2"
         }
-      },
-      "disabled": true
+      }
     },
     {
       "parameters": {
@@ -4202,13 +3434,13 @@
         "description": "Contains all the user's documents that you can check for context to answer user questions.",
         "topK": 5
       },
-      "id": "833da348-36c0-4044-8c40-55f29a4de8e5",
+      "id": "19be783a-38eb-481b-a3b2-74b60c887247",
       "name": "Retrieve Documents1",
       "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
       "typeVersion": 1,
       "position": [
-        -3820,
-        3800
+        -540,
+        2160
       ]
     },
     {
@@ -4226,10 +3458,10 @@
       "type": "@n8n/n8n-nodes-langchain.vectorStoreSupabase",
       "typeVersion": 1.1,
       "position": [
-        -3920,
-        3940
+        -980,
+        2260
       ],
-      "id": "5623be6a-b375-4793-b470-00d49bb05ac0",
+      "id": "4638614f-cadb-454b-b934-86aec76518b1",
       "name": "Supabase Vector Store1",
       "credentials": {
         "supabaseApi": {
@@ -4245,10 +3477,10 @@
       "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -3900,
-        4080
+        -1060,
+        2300
       ],
-      "id": "c6004d1f-e18f-4a9d-b05b-e585bfc992ee",
+      "id": "be2cfb55-3044-44d4-a981-dc475c173b71",
       "name": "Embeddings Google Gemini1",
       "credentials": {
         "googlePalmApi": {
@@ -4267,10 +3499,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -3620,
-        3920
+        -460,
+        2260
       ],
-      "id": "55786506-7c62-4734-844d-6175e1891ca3",
+      "id": "5f4f5bbf-5b7c-4a04-b4b0-b09a3188dac8",
       "name": "Google Gemini Chat Model3",
       "credentials": {
         "googlePalmApi": {
@@ -4286,12 +3518,11 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -11480,
-        -460
+        -4820,
+        1720
       ],
-      "id": "4a344f41-98a7-4f62-b72a-e05310902ebe",
-      "name": "Code3",
-      "disabled": true
+      "id": "4ab6e21a-44a8-4816-8703-7c3db9d9c80c",
+      "name": "Code3"
     },
     {
       "parameters": {
@@ -4300,10 +3531,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -2800,
-        -440
+        1360,
+        4320
       ],
-      "id": "f8091ee7-382a-4a43-914b-47c4f7f17c40",
+      "id": "5eb54dbe-6015-4cbb-8392-3ff16d734416",
       "name": "Code4"
     },
     {
@@ -4318,10 +3549,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -2580,
-        -440
+        1580,
+        4320
       ],
-      "id": "db811a3e-dbc8-4b6f-b114-baab23c24b2e",
+      "id": "e4f11488-6dea-4fe8-a359-91a709d511ed",
       "name": "Telegram13",
       "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
       "credentials": {
@@ -4343,10 +3574,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -6520,
-        -1440
+        -2360,
+        3320
       ],
-      "id": "f0ef0181-de48-472d-a71a-c26fd992b3e2",
+      "id": "fdca0675-ee91-4961-8d43-5dd05cd0ddd7",
       "name": "Telegram14",
       "webhookId": "e8ecaa39-ddb3-469a-8176-fd7daec63f6e",
       "credentials": {
@@ -4385,10 +3616,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -6480,
-        -1220
+        -2320,
+        3540
       ],
-      "id": "d10d8e67-0c18-41e7-b623-1dbbc87cd8d0",
+      "id": "ecf4a428-8a00-4099-97fe-b808c3045da5",
       "name": "If10"
     },
     {
@@ -4403,36 +3634,12 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -6220,
-        -1200
+        -2060,
+        3560
       ],
-      "id": "5ca1d1f3-fe8e-46ac-b633-c04cc6c42649",
+      "id": "447e472e-52b8-4b4f-9d84-df8a44880a35",
       "name": "Telegram15",
       "webhookId": "e8ecaa39-ddb3-469a-8176-fd7daec63f6e",
-      "credentials": {
-        "telegramApi": {
-          "id": "Jo4kWcVNJK0H8Qnp",
-          "name": "Governance account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "chatId": "={{ $('Telegram Trigger').item.json.callback_query.from.id }}",
-        "text": "={{ $json.text_message }}",
-        "additionalFields": {
-          "appendAttribution": false
-        }
-      },
-      "type": "n8n-nodes-base.telegram",
-      "typeVersion": 1.2,
-      "position": [
-        -3780,
-        3380
-      ],
-      "id": "8b099755-1697-4986-ac1f-25219cc227d7",
-      "name": "Telegram16",
-      "webhookId": "d1f8497d-f7bb-4f57-bf36-bb5f31849362",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -4571,10 +3778,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        -2780,
-        -4020
+        1380,
+        740
       ],
-      "id": "c6534e2d-d68e-4a9c-97b9-c716e41b6aa7",
+      "id": "98b4f4d9-ffe7-4ccd-942a-d1b9fc13015a",
       "name": "Switch1"
     },
     {
@@ -4584,10 +3791,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -3780,
-        3580
+        -600,
+        1960
       ],
-      "id": "83fb6e7d-6206-4c15-b2f0-8169295935a3",
+      "id": "b4057cc8-1678-43c0-a41a-84eadd101b59",
       "name": "Code5"
     },
     {
@@ -4601,10 +3808,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6460,
-        4080
+        -2980,
+        5340
       ],
-      "id": "2defd6ac-2313-4f30-8560-c89a2d8bc07d",
+      "id": "99cb1dc7-74e2-4184-8037-16eadf5b62e7",
       "name": "AI Agent3"
     },
     {
@@ -4615,10 +3822,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6280,
-        4200
+        -2860,
+        5440
       ],
-      "id": "b8086d0b-ec7f-4de2-846e-bb2a7a587b77",
+      "id": "2b11230a-cd9f-4006-b879-c291ff972110",
       "name": "HTTP Request"
     },
     {
@@ -4629,10 +3836,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6460,
-        4180
+        -2960,
+        5440
       ],
-      "id": "442c3a83-ff54-4a2c-9dd3-976b21a2cbf5",
+      "id": "e336017d-19cf-42f4-9f54-e6b674e072f5",
       "name": "Google Gemini Chat Model6",
       "credentials": {
         "googlePalmApi": {
@@ -4653,10 +3860,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -5600,
-        4380
+        -2300,
+        5640
       ],
-      "id": "3999ecc7-89df-425f-87ad-9b93fb27d86d",
+      "id": "86953e9c-2931-44a0-83d6-5166e6a55c4a",
       "name": "Message_Response2",
       "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
       "credentials": {
@@ -4677,10 +3884,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6320,
-        4380
+        -2900,
+        5640
       ],
-      "id": "2bc1c475-5ddf-4f32-8037-1cce3ec17aea",
+      "id": "3a6f34a9-262a-4a8f-8601-296c3bf26bf2",
       "name": "AI Agent4"
     },
     {
@@ -4691,10 +3898,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6160,
-        4500
+        -2780,
+        5760
       ],
-      "id": "eb399be5-fc08-4c1f-8c99-dd7b64c64547",
+      "id": "701a2cde-6b16-4fd4-8a95-6568191bc7ae",
       "name": "HTTP Request1"
     },
     {
@@ -4705,10 +3912,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6300,
-        4500
+        -2880,
+        5740
       ],
-      "id": "a3aff5ff-ef44-429b-8311-2bddbbcf066c",
+      "id": "fb4f3b6f-f754-44bb-bf3e-50b4cb14ef7e",
       "name": "Google Gemini Chat Model7",
       "credentials": {
         "googlePalmApi": {
@@ -4724,10 +3931,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -5880,
-        4380
+        -2500,
+        5640
       ],
-      "id": "46994f3a-4475-448b-bed6-f3101492d533",
+      "id": "da157fd1-b8bc-4b03-a8c2-379564e6d707",
       "name": "Code6"
     },
     {
@@ -4741,10 +3948,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -4640,
-        4380
+        -3040,
+        5000
       ],
-      "id": "b13c2c4c-3f78-4a9b-8c5b-e10b582db3d9",
+      "id": "17f7bd9e-f975-46e9-ae65-b4aa830eee00",
       "name": "AI Agent5"
     },
     {
@@ -4774,10 +3981,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -4460,
-        4540
+        -2900,
+        5140
       ],
-      "id": "a95b76ad-412d-43a1-96a8-bff56f31b342",
+      "id": "f84bcd47-2d19-4fe3-8d7b-908bbd3e3e63",
       "name": "HTTP Request2"
     },
     {
@@ -4788,10 +3995,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -4620,
-        4540
+        -3020,
+        5120
       ],
-      "id": "06dfee62-0fb2-4168-8625-fd8730829327",
+      "id": "fa885394-5bf6-4f03-9ffe-e3a1cc84ce17",
       "name": "Google Gemini Chat Model8",
       "credentials": {
         "googlePalmApi": {
@@ -4809,10 +4016,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -4960,
-        4420
+        -3240,
+        5000
       ],
-      "id": "c58eb140-3282-4fbd-b8e9-1b9cc0ad2b0d",
+      "id": "c5632567-ca2c-4912-b7c1-ee93f1f80656",
       "name": "Postgres13",
       "credentials": {
         "postgres": {
@@ -4832,10 +4039,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6440,
-        4680
+        -2980,
+        5980
       ],
-      "id": "39ab193e-6249-4f2f-9766-858e406cbd69",
+      "id": "0682fc00-1d95-42d6-aa8c-f579571805bc",
       "name": "AI Agent6"
     },
     {
@@ -4846,10 +4053,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6280,
-        4800
+        -2820,
+        6100
       ],
-      "id": "c1e1f5f8-40eb-4fd2-b6f3-6de4f4b86cbf",
+      "id": "f2c65a90-32d5-497a-83f0-599c6704c76d",
       "name": "HTTP Request3"
     },
     {
@@ -4860,10 +4067,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6420,
-        4800
+        -2960,
+        6100
       ],
-      "id": "baf46d7d-43c2-4a51-bd5d-9c41655935a8",
+      "id": "d36b5839-733f-4eab-80af-0eea0b8de429",
       "name": "Google Gemini Chat Model9",
       "credentials": {
         "googlePalmApi": {
@@ -4876,16 +4083,16 @@
       "parameters": {
         "content": "Agent lấy thông tin liên quan đến Drep",
         "height": 1700,
-        "width": 1860,
-        "color": 5
+        "width": 1240,
+        "color": 6
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -7280,
-        3660
+        -3340,
+        4920
       ],
-      "id": "e87f4db1-780c-4121-a12d-d96e947ec3dc",
+      "id": "f97f5855-2a0e-43a9-b9e4-8dc9ba150a90",
       "name": "Sticky Note16"
     },
     {
@@ -4916,10 +4123,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -3180,
-        -4000
+        980,
+        760
       ],
-      "id": "1fc12407-7706-444b-a251-3a5c22481c2f",
+      "id": "a35f638e-3bac-4469-9439-9be888aef2bb",
       "name": "If13"
     },
     {
@@ -5017,10 +4224,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3000,
-        -4020
+        1160,
+        740
       ],
-      "id": "e7ad042e-b6d7-47c6-b018-99e01f6a48ef",
+      "id": "2d4f934e-369f-440c-913d-c870fe0029d0",
       "name": "Telegram19",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -5125,10 +4332,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3140,
-        -4160
+        1020,
+        600
       ],
-      "id": "9c427b9d-7f9a-4397-a58b-b1dcc20d2ff0",
+      "id": "d88ce3af-252a-46e3-8e5f-af37c7e509ee",
       "name": "Telegram20",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -5149,10 +4356,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6480,
-        5720
+        -2980,
+        7060
       ],
-      "id": "927f8b04-f377-4157-8202-4a1e1d542c63",
+      "id": "332ce8de-a5b2-4b24-b107-3ef279928aca",
       "name": "AI Agent7"
     },
     {
@@ -5163,10 +4370,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6340,
-        5820
+        -2820,
+        7200
       ],
-      "id": "86626ec5-3622-4b02-a4a8-e5af1d58ac35",
+      "id": "bd6fff5a-b74e-4553-8468-26233edba6d1",
       "name": "HTTP Request4"
     },
     {
@@ -5177,10 +4384,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6460,
-        5820
+        -2960,
+        7180
       ],
-      "id": "a94bd55d-383d-43d7-ad20-f21f55bcd224",
+      "id": "312e4bcc-c50c-4059-aa26-46d6be58b0ee",
       "name": "Google Gemini Chat Model10",
       "credentials": {
         "googlePalmApi": {
@@ -5201,10 +4408,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -5660,
-        5720
+        -2300,
+        7060
       ],
-      "id": "2bd0f50b-90ac-4f6e-b9fd-8a6a177f6ff7",
+      "id": "c5a60f8a-cba4-4fa9-9c22-998bfa44127c",
       "name": "Message_Response6",
       "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
       "credentials": {
@@ -5225,10 +4432,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6620,
-        6040
+        -2960,
+        7380
       ],
-      "id": "e83c5500-d804-4c88-8249-d965bbd585cc",
+      "id": "0c43573f-1de0-4821-ae76-2f8b4087fb19",
       "name": "AI Agent8"
     },
     {
@@ -5239,10 +4446,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6460,
-        6160
+        -2780,
+        7500
       ],
-      "id": "56442444-79e2-46e1-b53e-fd55c81ba5ea",
+      "id": "24bf599d-3e52-41e0-9871-e2cd48046d88",
       "name": "HTTP Request5"
     },
     {
@@ -5253,10 +4460,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6620,
-        6160
+        -2940,
+        7500
       ],
-      "id": "d42d4d4c-7450-48b0-90f7-8474647c01aa",
+      "id": "f5cd45fc-0fee-41aa-b338-194f3dbdaf7d",
       "name": "Google Gemini Chat Model11",
       "credentials": {
         "googlePalmApi": {
@@ -5272,10 +4479,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -5940,
-        5720
+        -2520,
+        7060
       ],
-      "id": "9921757b-5106-4e1e-b08c-2197db5993f0",
+      "id": "9d5c817d-0315-4da9-b964-c1982ae26791",
       "name": "Code10"
     },
     {
@@ -5289,10 +4496,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6640,
-        5420
+        -2980,
+        6720
       ],
-      "id": "3ed5e0cf-931c-4b83-b5bd-52141b72d6c9",
+      "id": "6875d253-ff0d-4fe0-8e13-306ab195639d",
       "name": "AI Agent9"
     },
     {
@@ -5322,10 +4529,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6480,
-        5540
+        -2840,
+        6840
       ],
-      "id": "1af4cf86-6742-4425-bfca-9d17355752b1",
+      "id": "060226ac-b9c5-459c-af32-c9ad59f79a64",
       "name": "HTTP Request6"
     },
     {
@@ -5336,10 +4543,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6620,
-        5540
+        -2960,
+        6840
       ],
-      "id": "aac50aad-8125-442f-aec8-f3dad3ec7d8c",
+      "id": "3b73910e-428d-4534-a3a1-c38b545b372e",
       "name": "Google Gemini Chat Model12",
       "credentials": {
         "googlePalmApi": {
@@ -5357,10 +4564,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7020,
-        5440
+        -3220,
+        6720
       ],
-      "id": "690eabfa-7500-498f-a116-5482921a8bf2",
+      "id": "32b7ef42-429a-4963-bf7a-51d9cffffe2f",
       "name": "Postgres17",
       "credentials": {
         "postgres": {
@@ -5372,17 +4579,17 @@
     {
       "parameters": {
         "content": "Agent lấy thông tin liên quan đến SPO",
-        "height": 1000,
-        "width": 1860,
-        "color": 5
+        "height": 1020,
+        "width": 1240,
+        "color": 6
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -7280,
-        5360
+        -3340,
+        6640
       ],
-      "id": "001c6134-812d-4cf0-8c69-89e21e510b62",
+      "id": "3b77f834-e6d1-4a30-a391-0f3e82858ae0",
       "name": "Sticky Note17"
     },
     {
@@ -5413,10 +4620,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -3940,
-        -4480
+        220,
+        280
       ],
-      "id": "f0dc1310-824e-4066-b786-36f5cf25ca7a",
+      "id": "c8e0e1e0-ac34-4d40-92f5-33afeaa1bedd",
       "name": "If14"
     },
     {
@@ -5502,10 +4709,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3740,
-        -4500
+        420,
+        260
       ],
-      "id": "6cf4af35-514e-4a12-8e19-fc3da870a044",
+      "id": "4cee7880-1298-4b01-b1f8-0012e5ff7da3",
       "name": "Telegram21",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -5598,10 +4805,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -4040,
-        -4640
+        120,
+        120
       ],
-      "id": "e9bebd97-cc8e-4b1d-a643-c23aad92fc2e",
+      "id": "fb820b67-4cd3-4f3f-9ee9-749166d1452b",
       "name": "Telegram22",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -5622,10 +4829,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6500,
-        6480
+        -2920,
+        7820
       ],
-      "id": "18ebfbc4-9e6f-48d8-8328-c828c7f475db",
+      "id": "61a17a14-fb2c-4349-bd9a-d0ae28999ce9",
       "name": "AI Agent10"
     },
     {
@@ -5636,10 +4843,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6340,
-        6600
+        -2760,
+        7940
       ],
-      "id": "e5451cfe-ac25-4a45-90df-569acb078bf7",
+      "id": "ec3ccd79-3cef-47a1-aa38-e96fbf1c592c",
       "name": "HTTP Request7"
     },
     {
@@ -5650,10 +4857,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6500,
-        6600
+        -2920,
+        7940
       ],
-      "id": "81301fc1-28e2-419f-89ed-a6c8075e6b6c",
+      "id": "976c4fac-7d3a-404f-8a9b-748a93a327ea",
       "name": "Google Gemini Chat Model13",
       "credentials": {
         "googlePalmApi": {
@@ -5674,10 +4881,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -5700,
-        6640
+        -2340,
+        7980
       ],
-      "id": "7f1a32cc-8216-4f4d-8c55-7754dfd38199",
+      "id": "80a0b1b8-7e51-41ce-a073-217f5ff5bf21",
       "name": "Message_Response9",
       "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
       "credentials": {
@@ -5698,10 +4905,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6520,
-        6800
+        -2940,
+        8140
       ],
-      "id": "b6e48502-0c06-45de-8afc-d424a33c18a3",
+      "id": "8a494a44-51c5-4f24-8c52-9309e45398a3",
       "name": "AI Agent11"
     },
     {
@@ -5712,10 +4919,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6340,
-        6920
+        -2760,
+        8260
       ],
-      "id": "b418978f-54a8-4e58-83f4-cfa5c1744cff",
+      "id": "eb670cf6-f0c2-4cfb-ba02-f4929765e875",
       "name": "HTTP Request8"
     },
     {
@@ -5726,10 +4933,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6500,
-        6920
+        -2920,
+        8260
       ],
-      "id": "e18604a2-613d-4373-9c66-f490fc81c111",
+      "id": "4fb20a2f-6cda-43ee-94c6-625800f38314",
       "name": "Google Gemini Chat Model14",
       "credentials": {
         "googlePalmApi": {
@@ -5745,10 +4952,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -6040,
-        6640
+        -2540,
+        7980
       ],
-      "id": "5ac882f6-e116-4ba1-af26-137d7366a692",
+      "id": "8f500a9e-1017-4bb6-bc73-efd270366724",
       "name": "Code13"
     },
     {
@@ -5760,10 +4967,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -6980,
-        6480
+        -3200,
+        7820
       ],
-      "id": "5c6f6bc8-94ac-4768-b524-deaec4760135",
+      "id": "09fc2b14-feda-4173-ba7d-c8baa0600f5f",
       "name": "Postgres19",
       "credentials": {
         "postgres": {
@@ -5776,16 +4983,16 @@
       "parameters": {
         "content": "Agent lấy thông tin liên quan đến CC",
         "height": 760,
-        "width": 1860,
-        "color": 5
+        "width": 1240,
+        "color": 6
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -7280,
-        6360
+        -3340,
+        7700
       ],
-      "id": "ce436d35-9c80-449f-8c13-27ac97823a10",
+      "id": "6ed2802c-a86e-4cec-8272-323596be781d",
       "name": "Sticky Note19"
     },
     {
@@ -5799,10 +5006,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -6660,
-        5020
+        -3000,
+        6320
       ],
-      "id": "46f4a762-68f0-46b2-bfee-21c6567052b6",
+      "id": "c0d0b572-78f6-4c49-9b8c-451782d5caf2",
       "name": "AI Agent12"
     },
     {
@@ -5813,10 +5020,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -6500,
-        5160
+        -2820,
+        6460
       ],
-      "id": "801150cf-a4a5-40d8-a993-e5c6836616b2",
+      "id": "7fc5d2ea-9d4c-4c18-9090-c763bf1420b9",
       "name": "HTTP Request9"
     },
     {
@@ -5827,10 +5034,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        -6640,
-        5160
+        -2980,
+        6440
       ],
-      "id": "b609de0d-2440-4487-b031-2c3bb834bb51",
+      "id": "6c09d4b0-e931-4616-ba99-7f3c378e4fb0",
       "name": "Google Gemini Chat Model15",
       "credentials": {
         "googlePalmApi": {
@@ -5868,10 +5075,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -3600,
-        140
+        560,
+        4900
       ],
-      "id": "7acd2c0f-bf9d-4646-9984-74d77db74f8a",
+      "id": "fea4acf1-7eed-47e9-9f6f-463afe35a9d3",
       "name": "If12"
     },
     {
@@ -5886,10 +5093,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3300,
-        20
+        860,
+        4780
       ],
-      "id": "518e0b83-9317-4ae4-9231-b9104858297b",
+      "id": "d720df74-dc5d-40e5-89e3-0b479995833c",
       "name": "Telegram17",
       "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
       "credentials": {
@@ -5910,10 +5117,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3300,
-        240
+        860,
+        5000
       ],
-      "id": "4cef94da-dc37-4e79-9fca-a7de4a2ec96e",
+      "id": "5bab8918-6a21-47b6-b18c-68b3ab0b4af1",
       "name": "Telegram18",
       "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
       "credentials": {
@@ -5932,10 +5139,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -3720,
-        -40
+        440,
+        4720
       ],
-      "id": "52663974-41ea-44d1-807a-865f182a4714",
+      "id": "8e6ca0c4-cca8-42b9-bdf3-d598ab4731c0",
       "name": "Sticky Note18"
     },
     {
@@ -5945,10 +5152,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -3040,
-        140
+        1120,
+        4900
       ],
-      "id": "de01593b-c0fe-4851-85de-495f5bfb2252",
+      "id": "0c983988-33a8-4c53-ba38-0a13dc498a85",
       "name": "Code9"
     },
     {
@@ -6094,10 +5301,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -2840,
-        140
+        1320,
+        4900
       ],
-      "id": "f4268407-7372-41ed-84cf-25eceae86f6a",
+      "id": "c308e6d0-1e3c-4cce-9634-ed1b29977dab",
       "name": "Postgres14",
       "credentials": {
         "postgres": {
@@ -6108,196 +5315,6 @@
     },
     {
       "parameters": {
-        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
-        "text": "={{ $json.output }}",
-        "additionalFields": {
-          "appendAttribution": false,
-          "parse_mode": "HTML"
-        }
-      },
-      "type": "n8n-nodes-base.telegram",
-      "typeVersion": 1.2,
-      "position": [
-        -15060,
-        -1260
-      ],
-      "id": "90ac0707-f31a-4ed1-95d4-b6a6b265ae3a",
-      "name": "Message_Response3",
-      "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
-      "credentials": {
-        "telegramApi": {
-          "id": "Jo4kWcVNJK0H8Qnp",
-          "name": "Governance account"
-        }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "={{ $('Telegram Trigger').item.json.message.text }}",
-        "options": {
-          "systemMessage": "Role & Expertise\nYou are a professional-grade AI assistant with expert-level knowledge of the Cardano blockchain ecosystem. Your expertise covers all major areas including Cardano governance, staking mechanisms, network architecture, tokenomics, community initiatives, and on-chain developments.\n\nBehavioral Instructions\n\nInformation Retrieval\n\nWhen a user submits a query, immediately perform a search across the provided Cardano-related documents in Retrieve Documents or knowledge base.\n\nYour primary objective is to generate a response using accurate and verifiable information from documents.\n\nCite document sources where applicable using a consistent format.\n\nFallback to Trained Knowledge\n\nIf the requested information is not found in the documents, fall back on your internal knowledge.\n\nYour internal knowledge reflects the perspective of someone with extensive experience and long-term engagement in the Cardano ecosystem.\n\nResponse Quality & Tone\n\nEnsure all answers are factually correct, clearly structured, and accessible to both newcomers and experienced blockchain users.\n\nAvoid unnecessary jargon, but preserve technical precision.\n\nMaintain a professional, reliable, and neutral tone in all responses.\n\nOutput Objective\nDeliver clear, context-aware, and trusted answers that empower users to understand and engage confidently with the Cardano blockchain.Use proper headings (** or H1/H2 if HTML), bullet points, and clear paragraphing.\n\nNaturally include relevant keywords (e.g., Cardano staking, ADA governance, smart contracts) without keyword stuffing. Use emojis like 🔐 (security), 🧱 (blockchain), 📊 (statistics), ⚙️ (mechanism), 🔗 (link), ✅ (confirmation) to highlight key points and improve visual flow."
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.8,
-      "position": [
-        -15420,
-        -1260
-      ],
-      "id": "4c23cf95-35ad-4ee3-842d-94d33f1aa98b",
-      "name": "AI Agent13",
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "name": "documents",
-        "description": "Contains all documents that you can check for context to answer user questions.",
-        "topK": 10
-      },
-      "id": "642b5aee-ef7d-4bda-b722-da06ac2e0148",
-      "name": "Retrieve Documents3",
-      "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
-      "typeVersion": 1,
-      "position": [
-        -15140,
-        -1040
-      ],
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "sessionIdType": "customKey",
-        "sessionKey": "={{ $json.message.chat.id }}",
-        "tableName": "=n8n_chat_histories"
-      },
-      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
-      "typeVersion": 1.3,
-      "position": [
-        -15360,
-        -1020
-      ],
-      "id": "48f19a9d-dc1c-4858-ae34-bd3eabf324fa",
-      "name": "Postgres Chat Memory3",
-      "credentials": {
-        "postgres": {
-          "id": "y0YF1F4MKK5YeslP",
-          "name": "Postgres account"
-        }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "modelName": "models/text-embedding-004"
-      },
-      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -15020,
-        -780
-      ],
-      "id": "c5902b83-8430-45af-ba8b-7138827c9217",
-      "name": "Embeddings Google Gemini3",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
-        }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "tableName": {
-          "__rl": true,
-          "value": "documents",
-          "mode": "list",
-          "cachedResultName": "documents"
-        },
-        "options": {
-          "queryName": "match_documents"
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.vectorStoreSupabase",
-      "typeVersion": 1.1,
-      "position": [
-        -15240,
-        -900
-      ],
-      "id": "df143981-763c-42b5-9ced-c981ed1ffb78",
-      "name": "Supabase Vector Store3",
-      "credentials": {
-        "supabaseApi": {
-          "id": "nldB6zRahygpLVhq",
-          "name": "Supabase  Phuc's account "
-        }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "content": "Ai Agent: Trả lời câu hỏi từ nguiowf dùng. ",
-        "height": 760,
-        "width": 1240,
-        "color": 3
-      },
-      "type": "n8n-nodes-base.stickyNote",
-      "typeVersion": 1,
-      "position": [
-        -15720,
-        -1320
-      ],
-      "id": "c321b9dc-e320-4007-b1c5-fbd747ae840f",
-      "name": "Sticky Note21"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {
-          "maxOutputTokens": 4000
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -15580,
-        -1040
-      ],
-      "id": "60dceb45-2132-4403-88dd-df4816a726ca",
-      "name": "Google Gemini Chat Model16",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
-        }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -14800,
-        -900
-      ],
-      "id": "812432e0-e225-4761-b0e6-f83167a1b03e",
-      "name": "Google Gemini Chat Model17",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
-        }
-      },
-      "disabled": true
-    },
-    {
-      "parameters": {
         "sessionIdType": "customKey",
         "sessionKey": "={{ $json.result.chat.id }}",
         "tableName": "=n8n_chat_histories"
@@ -6305,10 +5322,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
       "typeVersion": 1.3,
       "position": [
-        -1440,
-        -1520
+        2720,
+        3180
       ],
-      "id": "4784d21b-566c-4d9b-a960-cee944eef058",
+      "id": "5ba49f25-5c9c-456c-8f58-eeebd6582597",
       "name": "Postgres Chat Memory4",
       "notesInFlow": false,
       "credentials": {
@@ -6330,10 +5347,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -1060,
-        -2280
+        3100,
+        2480
       ],
-      "id": "4bcf293c-9b7b-4262-ae66-7d417f591bd3",
+      "id": "4d02581b-16c6-405a-a3fa-8b4d0c464b42",
       "name": "Telegram23",
       "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
       "credentials": {
@@ -6350,10 +5367,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -1260,
-        -2280
+        2900,
+        2480
       ],
-      "id": "b3d7d1a4-e42e-4dc1-b305-69c300bdafef",
+      "id": "54cd4b59-8701-43d4-8da5-0a83e075d40b",
       "name": "Code8"
     },
     {
@@ -6384,10 +5401,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -3900,
-        -4000
+        260,
+        760
       ],
-      "id": "b2c8c194-032c-4b03-946c-eb5f37559d6e",
+      "id": "1e04087e-8a20-442e-9ca3-100b47d6bb44",
       "name": "If16"
     },
     {
@@ -6449,10 +5466,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3720,
-        -4020
+        440,
+        740
       ],
-      "id": "cb1dcae1-c932-4ff8-b883-78f22c5c928b",
+      "id": "52811bfe-4a81-47f1-a8ed-402353062559",
       "name": "Telegram24",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -6521,10 +5538,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -3960,
-        -4160
+        200,
+        600
       ],
-      "id": "5abecd8a-cd14-4d36-a3e7-8d025a338f6e",
+      "id": "741559e3-914d-4887-a67e-6b12d9561503",
       "name": "Telegram25",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -6543,10 +5560,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7060,
-        4080
+        -3240,
+        5340
       ],
-      "id": "4b3ca4c1-b70d-47bc-888b-a832950ab652",
+      "id": "457aeb96-ada4-4c3f-ba3f-d015ee7dff7e",
       "name": "Postgres15",
       "credentials": {
         "postgres": {
@@ -6564,10 +5581,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7040,
-        4380
+        -3220,
+        5640
       ],
-      "id": "6c0aa735-9da1-4c7d-8daa-43745c8d9839",
+      "id": "58bab6c6-b540-4c6b-9fe2-043343704b14",
       "name": "Postgres16",
       "credentials": {
         "postgres": {
@@ -6585,10 +5602,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7040,
-        4680
+        -3220,
+        5980
       ],
-      "id": "d41ad85f-9b12-4204-91d5-121643113bb6",
+      "id": "cb1b4a0f-f225-4d34-9da4-ce9cb9f53e13",
       "name": "Postgres18",
       "credentials": {
         "postgres": {
@@ -6606,10 +5623,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7040,
-        5020
+        -3220,
+        6320
       ],
-      "id": "cd5457d5-ccff-48d5-a16e-31b0bc2253e0",
+      "id": "267fe5f5-a3ed-4e42-a234-b5f13499fc65",
       "name": "Postgres20",
       "credentials": {
         "postgres": {
@@ -6627,10 +5644,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7000,
-        6040
+        -3220,
+        7380
       ],
-      "id": "e4af6cf7-575e-4f9c-b48b-afed4af82358",
+      "id": "24f3b988-c29d-4fc5-bfa0-3fe821318a88",
       "name": "Postgres21",
       "credentials": {
         "postgres": {
@@ -6648,10 +5665,10 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -7000,
-        5720
+        -3220,
+        7060
       ],
-      "id": "b4a2abba-b584-486f-9b7a-362f151bc704",
+      "id": "255dc42b-dd56-408f-8c5b-32237376661f",
       "name": "Postgres22",
       "credentials": {
         "postgres": {
@@ -6669,56 +5686,15 @@
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6,
       "position": [
-        -6980,
-        6800
+        -3200,
+        8140
       ],
-      "id": "490e8bdb-76d3-407b-9bcd-034fd2929b24",
+      "id": "8c36796f-b20d-4ff3-ad9e-f9ebec31d81f",
       "name": "Postgres23",
       "credentials": {
         "postgres": {
           "id": "y0YF1F4MKK5YeslP",
           "name": "Postgres account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "chatId": "=7860424712",
-        "text": "=✨Hệ thống đã cập nhật điểm  cho người dùng thành công!\n\nNhấn vào button bên dưới để kiểm tra!",
-        "replyMarkup": "inlineKeyboard",
-        "inlineKeyboard": {
-          "rows": [
-            {
-              "row": {
-                "buttons": [
-                  {
-                    "text": "🟡Kiểm tra",
-                    "additionalFields": {
-                      "callback_data": "check_point"
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "additionalFields": {
-          "appendAttribution": false
-        }
-      },
-      "type": "n8n-nodes-base.telegram",
-      "typeVersion": 1.2,
-      "position": [
-        -10860,
-        -440
-      ],
-      "id": "8dca1caf-4833-44bf-b9e6-e517f15e0146",
-      "name": "Telegram26",
-      "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
-      "credentials": {
-        "telegramApi": {
-          "id": "Jo4kWcVNJK0H8Qnp",
-          "name": "Governance account"
         }
       }
     },
@@ -6750,36 +5726,36 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -5340,
-        -1560
+        -1180,
+        3200
       ],
-      "id": "0a595f3b-96cf-409e-8d4b-333c6976a6a7",
+      "id": "032a1c75-76e5-407d-a3bc-7c79e6c069c0",
       "name": "If15"
     },
     {
       "parameters": {
-        "jsCode": "const questions = [\n  \"Hiến pháp Cardano là gì?\",\n  \"Tại sao Cardano cần một hiến pháp?\",\n  \"Ai có thể tham gia vào việc bỏ phiếu trên Cardano?\",\n  \"Làm thế nào để đề xuất thay đổi trên Cardano?\",\n  \"Hiến pháp Cardano có thể thay đổi không?\",\n  \"Voltaire là gì và nó liên quan đến Hiến pháp ra sao?\",\n  \"Quỹ Treasury của Cardano hoạt động như thế nào?\",\n  \"Làm thế nào để tham gia vào việc quản trị Cardano?\",\n  \"Có tổ chức nào giám sát Hiến pháp Cardano không?\",\n  \"Hiến pháp có giúp Cardano chống lại sự kiểm soát tập trung không?\",\n  \"Cardano là gì và nó khác gì so với Bitcoin hoặc Ethereum?\",\n  \"ADA là gì và tại sao nó quan trọng trong hệ sinh thái Cardano?\",\n  \"Staking trên Cardano hoạt động như thế nào và có an toàn không?\",\n  \"Giai đoạn phát triển của Cardano gồm những gì (Byron, Shelley, Goguen, Basho, Voltaire)?\",\n  \"Smart contract trên Cardano là gì và nó được sử dụng để làm gì?\",\n  \"Làm thế nào để mua và lưu trữ ADA một cách an toàn?\",\n  \"Cardano có ưu điểm gì so với các blockchain khác?\",\n  \"Project Catalyst là gì và nó giúp cộng đồng Cardano như thế nào?\",\n  \"Làm thế nào để trở thành một nhà điều hành Pool Staking (SPO) trên Cardano?\",\n  \"Tương lai của Cardano sẽ ra sao với các cập nhật sắp tới?\"\n];\n\n// Chọn ngẫu nhiên 3 câu hỏi không trùng lặp\nconst shuffled = questions.sort(() => 0.5 - Math.random());\nconst selectedQuestions = shuffled.slice(0, 10); // Lấy 3 câu hỏi\n\n// Tạo inline keyboard (trả về đối tượng JSON trực tiếp)\nconst inlineKeyboard = {\n  inline_keyboard: selectedQuestions.map((_, index) => [\n    {\n      text: `${index + 1}`, // Hiển thị số trên button\n      callback_data: `question_${index}` // Gán callback_data với chỉ số\n    }\n  ])\n};\n\n// Tạo định dạng đầu ra cho câu hỏi\nconst formattedQuestions = selectedQuestions\n  .map((question, index) => `${index + 1}. ${question}`)\n  .join('\\n');\n\n// Trả về đối tượng JSON\nreturn [{\n  json: {\n    random_questions: formattedQuestions,\n    reply_markup: inlineKeyboard // Trả về đối tượng thay vì chuỗi\n  }\n}];"
+        "jsCode": "const questions = [\n  \"Hiến pháp Cardano là gì?\",\n  \"Tại sao Cardano cần một hiến pháp?\",\n  \"Ai có thể tham gia vào việc bỏ phiếu trên Cardano?\",\n  \"Làm thế nào để đề xuất thay đổi trên Cardano?\",\n  \"Hiến pháp Cardano có thể thay đổi không?\",\n  \"Voltaire là gì và nó liên quan đến Hiến pháp ra sao?\",\n  \"Quỹ Treasury của Cardano hoạt động như thế nào?\",\n  \"Làm thế nào để tham gia vào việc quản trị Cardano?\",\n  \"Có tổ chức nào giám sát Hiến pháp Cardano không?\",\n  \"Hiến pháp có giúp Cardano chống lại sự kiểm soát tập trung không?\",\n  \"Cardano là gì và nó khác gì so với Bitcoin hoặc Ethereum?\",\n  \"ADA là gì và tại sao nó quan trọng trong hệ sinh thái Cardano?\",\n  \"Staking trên Cardano hoạt động như thế nào và có an toàn không?\",\n  \"Giai đoạn phát triển của Cardano gồm những gì (Byron, Shelley, Goguen, Basho, Voltaire)?\",\n  \"Smart contract trên Cardano là gì và nó được sử dụng để làm gì?\",\n  \"Làm thế nào để mua và lưu trữ ADA một cách an toàn?\",\n  \"Cardano có ưu điểm gì so với các blockchain khác?\",\n  \"Project Catalyst là gì và nó giúp cộng đồng Cardano như thế nào?\",\n  \"Làm thế nào để trở thành một nhà điều hành Pool Staking (SPO) trên Cardano?\",\n  \"Tương lai của Cardano sẽ ra sao với các cập nhật sắp tới?\"\n];\n\n// Chọn ngẫu nhiên 3 câu hỏi không trùng lặp\nconst shuffled = questions.sort(() => 0.5 - Math.random());\nconst selectedQuestions = shuffled.slice(0, 10); // Lấy 3 câu hỏi\n\n// Tạo inline keyboard (trả về đối tượng JSON trực tiếp)\nconst inlineKeyboard = {\n  inline_keyboard: selectedQuestions.map((_, index) => [\n    {\n      text: `${index + 1}`, // Hiển thị số trên button\n      callback_data: `question_${index}` // Gán callback_data với chỉ số\n    }\n  ])\n};\n\n// Tạo định dạng đầu ra cho câu hỏi\nconst formattedQuestions = selectedQuestions\n  .map((question, index) => `${index + 1}. ${question}`)\n  .join('\\n');\n\n// Trả về đối tượng JSON\nreturn [{\n  json: {\n    random_questions: formattedQuestions,\n    reply_markup: inlineKeyboard, // Trả về đối tượng thay vì chuỗi\n    selected_questions: selectedQuestions\n  }\n}];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -2280,
-        -3540
+        1880,
+        1220
       ],
-      "id": "025fd262-16ae-4fb5-8974-3fa4978ada48",
+      "id": "231c22f1-1045-40ec-b42b-ba16f676cbf5",
       "name": "CodeRandom"
     },
     {
       "parameters": {
-        "jsCode": "const questions = [\n  \"What is the Cardano Constitution?\",\n  \"Why does Cardano need a constitution?\",\n  \"Who can participate in voting on Cardano?\",\n  \"How can changes be proposed on Cardano?\",\n  \"Can the Cardano Constitution be changed?\",\n  \"What is Voltaire and how is it related to the Constitution?\",\n  \"How does the Cardano Treasury Fund operate?\",\n  \"How can one participate in Cardano governance?\",\n  \"Is there any organization overseeing the Cardano Constitution?\",\n  \"Does the Constitution help Cardano resist centralized control?\",\n  \"What is Cardano and how does it differ from Bitcoin or Ethereum?\",\n  \"What is ADA and why is it important in the Cardano ecosystem?\",\n  \"How does staking work on Cardano, and is it safe?\",\n  \"What are the development phases of Cardano (Byron, Shelley, Goguen, Basho, Voltaire)?\",\n  \"What are smart contracts on Cardano and what are they used for?\",\n  \"How can one buy and store ADA safely?\",\n  \"What advantages does Cardano have over other blockchains?\",\n  \"What is Project Catalyst and how does it benefit the Cardano community?\",\n  \"How can one become a Stake Pool Operator (SPO) on Cardano?\",\n  \"What is the future of Cardano with upcoming updates?\"\n];\n// Chọn ngẫu nhiên 3 câu hỏi không trùng lặp\nconst shuffled = questions.sort(() => 0.5 - Math.random());\nconst selectedQuestions = shuffled.slice(0, 10); // Lấy 3 câu hỏi\n\n// Tạo inline keyboard (trả về đối tượng JSON trực tiếp)\nconst inlineKeyboard = {\n  inline_keyboard: selectedQuestions.map((_, index) => [\n    {\n      text: `${index + 1}`, // Hiển thị số trên button\n      callback_data: `question_${index}` // Gán callback_data với chỉ số\n    }\n  ])\n};\n\n// Tạo định dạng đầu ra cho câu hỏi\nconst formattedQuestions = selectedQuestions\n  .map((question, index) => `${index + 1}. ${question}`)\n  .join('\\n');\n\n// Trả về đối tượng JSON\nreturn [{\n  json: {\n    random_questions: formattedQuestions,\n    reply_markup: inlineKeyboard // Trả về đối tượng thay vì chuỗi\n  }\n}];"
+        "jsCode": "const questions = [\n  \"What is the Cardano Constitution?\",\n  \"Why does Cardano need a constitution?\",\n  \"Who can participate in voting on Cardano?\",\n  \"How can changes be proposed on Cardano?\",\n  \"Can the Cardano Constitution be changed?\",\n  \"What is Voltaire and how is it related to the Constitution?\",\n  \"How does the Cardano Treasury Fund operate?\",\n  \"How can one participate in Cardano governance?\",\n  \"Is there any organization overseeing the Cardano Constitution?\",\n  \"Does the Constitution help Cardano resist centralized control?\",\n  \"What is Cardano and how does it differ from Bitcoin or Ethereum?\",\n  \"What is ADA and why is it important in the Cardano ecosystem?\",\n  \"How does staking work on Cardano, and is it safe?\",\n  \"What are the development phases of Cardano (Byron, Shelley, Goguen, Basho, Voltaire)?\",\n  \"What are smart contracts on Cardano and what are they used for?\",\n  \"How can one buy and store ADA safely?\",\n  \"What advantages does Cardano have over other blockchains?\",\n  \"What is Project Catalyst and how does it benefit the Cardano community?\",\n  \"How can one become a Stake Pool Operator (SPO) on Cardano?\",\n  \"What is the future of Cardano with upcoming updates?\"\n];\n// Chọn ngẫu nhiên 3 câu hỏi không trùng lặp\nconst shuffled = questions.sort(() => 0.5 - Math.random());\nconst selectedQuestions = shuffled.slice(0, 10); // Lấy 3 câu hỏi\n\n\n// Tạo inline keyboard (trả về đối tượng JSON trực tiếp)\nconst inlineKeyboard = {\n  inline_keyboard: selectedQuestions.map((_, index) => [\n    {\n      text: `${index + 1}`, // Hiển thị số trên button\n      callback_data: `question_${index}` // Gán callback_data với chỉ số\n    }\n  ])\n};\n\n// Tạo định dạng đầu ra cho câu hỏi\nconst formattedQuestions = selectedQuestions\n  .map((question, index) => `${index + 1}. ${question}`)\n  .join('\\n');\n\n// Chuyển selected_questions thành chuỗi JSON\nconst selectedQuestionsJson = JSON.stringify(selectedQuestions);\n// Trả về đối tượng JSON\nreturn [{\n  json: {\n    random_questions: formattedQuestions,\n    reply_markup: inlineKeyboard, // Trả về đối tượng thay vì chuỗi\n    selected_questions: selectedQuestionsJson // Chuỗi JSON thay vì mảng\n  }\n}];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -2280,
-        -3340
+        1880,
+        1420
       ],
-      "id": "dd25f56c-0174-4c55-ba0c-56869f95dca2",
+      "id": "93535f5d-09ae-4a83-8615-1e115e2f1eba",
       "name": "CodeRandom1"
     },
     {
@@ -6793,10 +5769,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -1820,
-        -1740
+        2340,
+        3020
       ],
-      "id": "6544defe-2cba-4cdb-bcad-737c00601826",
+      "id": "af25fb54-c528-4a62-a53e-6b779fa1b020",
       "name": "Telegram27",
       "webhookId": "a8c67252-0436-4e80-b080-49391d923525",
       "credentials": {
@@ -6815,10 +5791,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -1200,
-        -1740
+        2960,
+        3020
       ],
-      "id": "9dc770ad-59b8-45f2-a997-86a86dd0b854",
+      "id": "f4b3860a-f3f2-4f7e-b42b-f55a3fcafd4c",
       "name": "Telegram28",
       "webhookId": "c0ed9ff5-579d-434d-bd96-01ee34a7c79b",
       "credentials": {
@@ -6917,10 +5893,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -1940,
-        -3340
+        2140,
+        1420
       ],
-      "id": "f34462a7-fe61-4427-b315-bd70a880e8f8",
+      "id": "f132c56e-4afb-4e66-976c-8599736e755e",
       "name": "Mes_Filter_EN",
       "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
       "credentials": {
@@ -7281,6 +6257,280 @@
               },
               "renameOutput": true,
               "outputKey": "update-role-cc"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "3d08564a-b898-4950-beb2-c1355f927077",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "api_drepinformation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Drep information "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "778700d2-64e5-49df-a07f-1b224ee368c5",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "DReps_Delegators",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Drep delegators  "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "22104325-b6df-492c-bca2-6e1379bd6085",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "voter_proposal_list",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Voter proposal list "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "b1f0bb40-0959-45bd-ae6e-cb45e78f3262",
+                    "leftValue": "{{ $json.callback_query.data }}",
+                    "rightValue": "Drep_voting_power_history",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Drep voting power history "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "e748bbec-d0d1-4856-a984-bd63f4ab5a73",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "epoch_params",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Epoch params"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "454b9147-8608-4c53-aff1-b3e937d81e8b",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "api_spoinformation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "spo information "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7cd50a59-9a60-41f4-8ccf-18f0ad2e8f53",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "SPO_voting_power_history",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "spo voting power history"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "1fc27fa5-43ae-4542-b704-ac098a2f14b8",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "pool_delegators",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "pool delegators "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "01a32ed9-2439-46b0-be1c-5d9a9a9406f7",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "api_CCinformation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "CC information "
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "e45ee9b3-0e0a-4d57-a9db-4374dc91dd31",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "committee_votes",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "CC votes"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "f350a442-ec72-4e64-84ed-4765abf1bdc5",
+                    "leftValue": "={{ $json.callback_query.data }}",
+                    "rightValue": "question",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Handle_question "
             }
           ]
         },
@@ -7289,10 +6539,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        -5500,
-        -1040
+        -1340,
+        3720
       ],
-      "id": "82c03505-032e-4b21-8236-7fa10b2a8c1d",
+      "id": "21173a76-dc40-4dfd-a792-eeb04802e163",
       "name": "Switch Call Back"
     },
     {
@@ -7302,10 +6552,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -9060,
-        -1440
+        -4900,
+        3320
       ],
-      "id": "ba9bdf19-af02-45f6-b684-db9b55768612",
+      "id": "0316735e-f0c3-4f20-85af-06117e14044b",
       "name": "CodeRandom2"
     },
     {
@@ -7315,10 +6565,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        -8740,
-        -1220
+        -4580,
+        3540
       ],
-      "id": "2ddbd6f5-b236-4e01-9696-07bd1fcdd9ed",
+      "id": "ec8049c1-2117-4e90-99c8-01562524502e",
       "name": "CodeRandom3"
     },
     {
@@ -7410,10 +6660,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -8760,
-        -1440
+        -4600,
+        3320
       ],
-      "id": "e21090ce-d902-47f0-98f9-c3c08c5317c7",
+      "id": "d89b6dcc-0424-4086-8dc9-4723c0bf9f22",
       "name": "Mes_Filter_Vi1",
       "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
       "credentials": {
@@ -7512,10 +6762,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -8480,
-        -1220
+        -4320,
+        3540
       ],
-      "id": "6da8305a-e569-4321-9508-c3452af7fe06",
+      "id": "4c2d2722-3223-4528-9c0e-87f999e3eb0a",
       "name": "Mes_Filter_EN1",
       "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
       "credentials": {
@@ -7553,10 +6803,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -9180,
-        -500
+        -5020,
+        4260
       ],
-      "id": "2288a708-e4c9-4985-8aa8-a931de140580",
+      "id": "c852e51d-c86f-464c-9c04-9afc1df4ea7c",
       "name": "If17"
     },
     {
@@ -7678,10 +6928,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -8960,
-        -520
+        -4800,
+        4240
       ],
-      "id": "22fb7e06-286f-4271-860e-de0745259dc2",
+      "id": "d5557f28-574f-43a9-be3a-b27be2116766",
       "name": "Telegram29",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -7810,10 +7060,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9220,
-        -680
+        -5060,
+        4080
       ],
-      "id": "4d493ee3-619f-4076-9557-3752287b4c8e",
+      "id": "f8040f15-b9d7-497c-b0cc-d0f38be09b9b",
       "name": "Telegram30",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -7851,10 +7101,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -9780,
-        740
+        -5620,
+        5500
       ],
-      "id": "f7ee18b0-782a-4610-be54-bec537c15482",
+      "id": "13ae0e06-f47b-4ad8-836c-84f9086b8a36",
       "name": "If18"
     },
     {
@@ -7952,10 +7202,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9600,
-        720
+        -5440,
+        5480
       ],
-      "id": "a8d83df4-ba72-4f93-9628-6366e8dff496",
+      "id": "c9668b24-2171-4728-bd95-38df94b618c9",
       "name": "Telegram31",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -8060,10 +7310,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9740,
-        580
+        -5580,
+        5340
       ],
-      "id": "f02cdb28-a5e3-4889-98b9-5e78114f40cf",
+      "id": "c1f865b6-5568-4e7e-8e1a-0dc858a0f3e2",
       "name": "Telegram32",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -8101,10 +7351,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -9600,
-        220
+        -5440,
+        4980
       ],
-      "id": "6d965810-57ae-4d9c-9362-b4023e8973dc",
+      "id": "de67bb3f-21c8-4b19-b724-4a1ead1b8181",
       "name": "If19"
     },
     {
@@ -8190,10 +7440,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9400,
-        200
+        -5240,
+        4960
       ],
-      "id": "994fc6fb-baac-43a1-b64e-853dfd88821e",
+      "id": "2748e9a2-9df1-42ac-84b1-ff8934b7fd97",
       "name": "Telegram33",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -8286,10 +7536,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9700,
-        60
+        -5540,
+        4820
       ],
-      "id": "bec97418-a26d-4df4-923d-8830b8a91547",
+      "id": "695dd2a5-01db-40d3-9de9-ffe05fbc8d91",
       "name": "Telegram34",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -8327,10 +7577,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        -9860,
-        1220
+        -5700,
+        5980
       ],
-      "id": "c7d19d3b-97a5-4396-85fb-c6c3e4b0cebf",
+      "id": "07481732-9319-4ecc-aefc-8c20d1e548b1",
       "name": "If20"
     },
     {
@@ -8392,10 +7642,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9680,
-        1200
+        -5520,
+        5960
       ],
-      "id": "7b569a30-f2b9-4caf-a03e-322c5bcc9618",
+      "id": "4c950c33-14fa-4ae2-92aa-57e448e3363b",
       "name": "Telegram35",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -8464,10 +7714,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -9920,
-        1020
+        -5760,
+        5780
       ],
-      "id": "356e9fe5-59f1-44e1-b48c-6d12743a8e5b",
+      "id": "79984441-af90-4f95-a74d-32184baed173",
       "name": "Telegram36",
       "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
       "credentials": {
@@ -8608,10 +7858,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        -9680,
-        -480
+        -5520,
+        4280
       ],
-      "id": "afddde5b-0070-4d11-9b17-1d3aeea4dfcf",
+      "id": "f0cb7d71-7922-4eb8-bd7b-01fda5d21d44",
       "name": "Switch-Account"
     },
     {
@@ -8624,10 +7874,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -9920,
-        -1500
+        -5760,
+        3260
       ],
-      "id": "7dab33b9-3a38-469c-a345-9c10309dc1ad",
+      "id": "364f757a-199e-422e-a8e8-cbdcfbb52d6c",
       "name": "Sticky Note3"
     },
     {
@@ -8640,10 +7890,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -9180,
-        -1500
+        -5020,
+        3260
       ],
-      "id": "22fabd14-a182-4508-92ad-79bd168d5dd9",
+      "id": "9933ffd2-1c3c-446c-ad92-48b427cc641d",
       "name": "Sticky Note11"
     },
     {
@@ -8656,10 +7906,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -8160,
-        -1500
+        -4000,
+        3260
       ],
-      "id": "b38a40c5-4258-4dd5-b520-ee5fa1574955",
+      "id": "e119884b-5b67-4b32-8408-53f81c7d7d76",
       "name": "Sticky Note15"
     },
     {
@@ -8672,10 +7922,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -7400,
-        -1500
+        -3240,
+        3260
       ],
-      "id": "c705f137-c6f6-4ac6-a77e-ed9bbf44e321",
+      "id": "7b3aefa9-f45a-4592-8cfc-b10b8b3d22f4",
       "name": "Sticky Note20"
     },
     {
@@ -8688,10 +7938,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -6660,
-        -1500
+        -2500,
+        3260
       ],
-      "id": "89ac84c4-eac7-4368-869a-5dd359b3e2e3",
+      "id": "ba68a50d-68f0-45e1-a346-2e65b4574d3e",
       "name": "Sticky Note22"
     },
     {
@@ -8704,10 +7954,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -10140,
-        -780
+        -5980,
+        3980
       ],
-      "id": "648d52f0-1bea-4985-b5d7-6ec21e23164b",
+      "id": "ff6d8e19-f38e-4a69-a93c-b7333c465b7b",
       "name": "Sticky Note23"
     },
     {
@@ -8720,11 +7970,219 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -8600,
-        -120
+        -4440,
+        4640
       ],
-      "id": "05bf5c34-d855-4dcf-8479-e50b9cc8f3b9",
+      "id": "ca36ade3-0314-4ce3-b615-e27f5fe0d818",
       "name": "Sticky Note24"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=SELECT EXISTS (\n    SELECT 1 FROM bbo_user WHERE telegramid = {{ $('Telegram Trigger').item.json.message.chat.id }}\n) AS user_exists;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2280,
+        2500
+      ],
+      "id": "771ba095-efd7-4b96-a907-cc59487111e6",
+      "name": "check_exist",
+      "alwaysOutputData": true,
+      "credentials": {
+        "postgres": {
+          "id": "y0YF1F4MKK5YeslP",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "value": "user_questions",
+          "mode": "list",
+          "cachedResultName": "user_questions"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "chat_id": "={{ $json.result.chat.id }}",
+            "selected_questions": "={{ $('CodeRandom1').item.json.selected_questions }}",
+            "message_id": "={{ $json.result.message_id }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "chat_id",
+              "displayName": "chat_id",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "message_id",
+              "displayName": "message_id",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "selected_questions",
+              "displayName": "selected_questions",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "array",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "created_at",
+              "displayName": "created_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "expires_at",
+              "displayName": "expires_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2380,
+        1320
+      ],
+      "id": "117d7704-d4d8-4f47-ba48-06e458a8c31f",
+      "name": "Postgres1",
+      "credentials": {
+        "postgres": {
+          "id": "y0YF1F4MKK5YeslP",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT * FROM user_questions WHERE chat_id = 7860424712 and message_id = 5010",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        -1720,
+        1960
+      ],
+      "id": "6be0a397-62e4-4b86-94a7-dacfe2d5915b",
+      "name": "ExecuteQuestions",
+      "credentials": {
+        "postgres": {
+          "id": "y0YF1F4MKK5YeslP",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.message.chat.id }}",
+        "text": "Typing...",
+        "additionalFields": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -1460,
+        1960
+      ],
+      "id": "cfdbb763-e92c-4005-a748-9cb4d9b44ba9",
+      "name": "Telegram37",
+      "webhookId": "a8c67252-0436-4e80-b080-49391d923525",
+      "credentials": {
+        "telegramApi": {
+          "id": "Jo4kWcVNJK0H8Qnp",
+          "name": "Governance account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "deleteMessage",
+        "chatId": "={{ $('Telegram27').item.json.result.chat.id }}",
+        "messageId": "={{ $('Telegram27').item.json.result.message_id }}"
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        -820,
+        1960
+      ],
+      "id": "1faed699-1dbb-43d5-8a5e-ac677a9b7b24",
+      "name": "Telegram38",
+      "webhookId": "c0ed9ff5-579d-434d-bd96-01ee34a7c79b",
+      "credentials": {
+        "telegramApi": {
+          "id": "Jo4kWcVNJK0H8Qnp",
+          "name": "Governance account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "",
+        "height": 660,
+        "width": 1840,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -1820,
+        1820
+      ],
+      "id": "7b31ef3a-eef9-436b-8618-a1d57bfee4bd",
+      "name": "Sticky Note2"
     }
   ],
   "pinData": {},
@@ -8901,95 +8359,6 @@
         ]
       ]
     },
-    "Switch_Question": {
-      "main": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [
-          {
-            "node": "Postgres13",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres15",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres16",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres18",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres20",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres17",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres22",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres21",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres19",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Postgres23",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "If_Call_Help": {
       "main": [
         [
@@ -9026,29 +8395,11 @@
         ]
       ]
     },
-    "If_Que": {
-      "main": [
-        [
-          {
-            "node": "Set_Question_Text_Vi",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Set_Question_Text_En",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "AI Agent1": {
       "main": [
         [
           {
-            "node": "Code5",
+            "node": "Telegram38",
             "type": "main",
             "index": 0
           }
@@ -9061,33 +8412,6 @@
           {
             "node": "AI Agent1",
             "type": "ai_memory",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Set_Question_Text_Vi": {
-      "main": [
-        [
-          {
-            "node": "Telegram16",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "AI Agent1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Set_Question_Text_En": {
-      "main": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "main",
             "index": 0
           }
         ]
@@ -9131,17 +8455,6 @@
         [
           {
             "node": "check_exist",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "check_exist": {
-      "main": [
-        [
-          {
-            "node": "If_exist",
             "type": "main",
             "index": 0
           }
@@ -9598,11 +8911,6 @@
         ]
       ]
     },
-    "Retrieve Documents": {
-      "ai_tool": [
-        []
-      ]
-    },
     "Google Gemini Chat Model2": {
       "ai_languageModel": [
         [
@@ -9707,11 +9015,6 @@
             "index": 0
           }
         ]
-      ]
-    },
-    "Telegram16": {
-      "main": [
-        []
       ]
     },
     "Switch1": {
@@ -10247,83 +9550,6 @@
         ]
       ]
     },
-    "AI Agent13": {
-      "main": [
-        [
-          {
-            "node": "Message_Response3",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Retrieve Documents3": {
-      "ai_tool": [
-        [
-          {
-            "node": "AI Agent13",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Postgres Chat Memory3": {
-      "ai_memory": [
-        [
-          {
-            "node": "AI Agent13",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Embeddings Google Gemini3": {
-      "ai_embedding": [
-        [
-          {
-            "node": "Supabase Vector Store3",
-            "type": "ai_embedding",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Supabase Vector Store3": {
-      "ai_vectorStore": [
-        [
-          {
-            "node": "Retrieve Documents3",
-            "type": "ai_vectorStore",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model16": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent13",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model17": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Retrieve Documents3",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Postgres Chat Memory4": {
       "ai_memory": [
         [
@@ -10492,11 +9718,6 @@
         ]
       ]
     },
-    "Message_Response": {
-      "main": [
-        []
-      ]
-    },
     "Telegram27": {
       "main": [
         [
@@ -10615,6 +9836,83 @@
         [
           {
             "node": "Postgres6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres13",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres15",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres16",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres18",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres20",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres17",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres22",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres21",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres19",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Postgres23",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "ExecuteQuestions",
             "type": "main",
             "index": 0
           }
@@ -10753,13 +10051,90 @@
           }
         ]
       ]
+    },
+    "check_exist": {
+      "main": [
+        [
+          {
+            "node": "If_exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mes_Filter_Vi": {
+      "main": [
+        [
+          {
+            "node": "Postgres1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mes_Filter_EN": {
+      "main": [
+        [
+          {
+            "node": "Postgres1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ExecuteQuestions": {
+      "main": [
+        [
+          {
+            "node": "Telegram37",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram37": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Retrieve Documents": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram38": {
+      "main": [
+        [
+          {
+            "node": "Code5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "a2e0e964-6f7a-4e05-971e-1d63e5e0472f",
+  "versionId": "387c2874-a730-4e4d-8203-0d50001282e1",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "ddc78abf6d26c6050fafb0ba452cf56a55cb8482e5cde128d75a821055f99c24"

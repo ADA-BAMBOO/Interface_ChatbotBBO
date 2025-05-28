@@ -1,5 +1,5 @@
 {
-  "name": "Bot_BBO",
+  "name": "Bot_BBO_NỘP",
   "nodes": [
     {
       "parameters": {
@@ -14,7 +14,7 @@
         -5660,
         940
       ],
-      "id": "1760d1a4-b0e0-42f3-aabc-c546fefd33cc",
+      "id": "b5d489f0-6c14-46c6-a9f0-2c1ed868ef71",
       "name": "Sticky Note"
     },
     {
@@ -251,7 +251,7 @@
         1740,
         3040
       ],
-      "id": "7838b423-d033-40ee-be1f-02e7593fb857",
+      "id": "79373ef6-bd04-42e7-9ab6-f314eadb1a25",
       "name": "Switch"
     },
     {
@@ -269,9 +269,9 @@
         3160,
         3020
       ],
-      "id": "f7f00e82-c379-4366-a940-c3dd9f3eacce",
+      "id": "5be9483a-5044-46af-b7bf-2b1b8193b14e",
       "name": "Message_Response",
-      "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
+      "webhookId": "c7d5d0c1-3275-41b4-b0c9-e2834e40ede6",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -293,7 +293,7 @@
         2600,
         3020
       ],
-      "id": "e131f11a-2558-4259-9d92-159500e2803c",
+      "id": "9e0a410e-8b03-424d-b597-9ca5668774d8",
       "name": "AI Agent"
     },
     {
@@ -302,7 +302,7 @@
         "description": "Contains all the user's documents that you can check for context to answer user questions.",
         "topK": 5
       },
-      "id": "63d792dc-5ef4-44dd-aa1b-31ac99bcba26",
+      "id": "ff5d49b3-4191-40b0-918b-de30ce62ac6d",
       "name": "Retrieve Documents",
       "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
       "typeVersion": 1,
@@ -310,25 +310,6 @@
         3100,
         3280
       ]
-    },
-    {
-      "parameters": {
-        "modelName": "models/text-embedding-004"
-      },
-      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        2600,
-        3400
-      ],
-      "id": "27c32934-1d42-4fdb-bd29-d0fd38f7f190",
-      "name": "Embeddings Google Gemini",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
-        }
-      }
     },
     {
       "parameters": {
@@ -348,7 +329,7 @@
         2680,
         3380
       ],
-      "id": "d584f99c-3771-405e-a16e-b44cc7962ca6",
+      "id": "c00aef2b-83cb-4552-8497-74787c6e9a61",
       "name": "Supabase Vector Store",
       "credentials": {
         "supabaseApi": {
@@ -370,7 +351,7 @@
         2280,
         2920
       ],
-      "id": "959917ed-a7db-4e51-8b1b-461de1977da6",
+      "id": "ea696fe0-da42-4045-869f-3e85ce494659",
       "name": "Sticky Note1"
     },
     {
@@ -388,9 +369,9 @@
         -3120,
         3320
       ],
-      "id": "8d951f9b-2fb1-4b76-837b-6fd77844d4ea",
+      "id": "9cba4691-97f8-48fe-898b-65315b3a6b1e",
       "name": "Feedback",
-      "webhookId": "62f2f445-ebcc-490f-94d9-b872584941c2",
+      "webhookId": "efbbb5fd-08df-4422-a045-cb169df2116c",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -460,9 +441,9 @@
         2020,
         1760
       ],
-      "id": "b3d7a160-71cf-44e8-858c-97301993a5e8",
+      "id": "3d795d27-04e0-41fd-9c71-0d58aefcb82f",
       "name": "Mes_Help_Vi",
-      "webhookId": "f5873235-81ab-4df1-9a14-0faba1a22440",
+      "webhookId": "5c7daab0-e193-486f-819b-98db8a000f5e",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -532,9 +513,9 @@
         2020,
         2000
       ],
-      "id": "954e4df7-2e4c-4b72-b462-6e14df8b6679",
+      "id": "3f8a8238-5fa9-4c82-940f-9bbe814f123e",
       "name": "Mes_Help_En",
-      "webhookId": "af626b78-9e16-4ece-a5f2-20e84be686c2",
+      "webhookId": "6091e817-399b-4e3b-9a00-4a62cbfa1039",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -604,9 +585,9 @@
         2060,
         2400
       ],
-      "id": "0e633739-cf4d-4b11-a585-55e9696fc7b8",
+      "id": "6d342490-4cf6-4f8d-88ed-dce4cb911ea5",
       "name": "Mes_Start_Vi",
-      "webhookId": "9aaeac83-1fbc-4d81-84c8-8ce9e483c4f0",
+      "webhookId": "7aece3ad-9913-4c02-84fa-785ed7a719e9",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -676,9 +657,9 @@
         2060,
         2620
       ],
-      "id": "9d1d933d-434b-4caf-987f-cac811107799",
+      "id": "e9014a1d-7dbb-4f7e-8110-5ecae7310ad6",
       "name": "Mes_Start_En",
-      "webhookId": "43fd4346-caa5-4fe8-bb11-50516dded99c",
+      "webhookId": "2337c0fc-fc1e-4884-a621-6783ae2c6291",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -718,7 +699,7 @@
         1820,
         2500
       ],
-      "id": "68265f24-cf07-4802-84e4-87038a8bf3d1",
+      "id": "f16dd96b-cc85-479a-8fdc-51a9d705e2a5",
       "name": "If_Lang_Start"
     },
     {
@@ -755,7 +736,7 @@
         1680,
         1860
       ],
-      "id": "6f22dbc7-5b24-4ba7-a85e-223eaa76534f",
+      "id": "85af62f8-d850-4786-abfa-f302553623bb",
       "name": "If_Lang_Help"
     },
     {
@@ -789,7 +770,7 @@
         760,
         3800
       ],
-      "id": "a1aa5a6e-2ede-4827-9db4-3a359eadc8a7",
+      "id": "2d3f2eea-7d78-4923-aee7-35070d743934",
       "name": "If_Command"
     },
     {
@@ -807,9 +788,9 @@
         1060,
         3680
       ],
-      "id": "0e14b494-e9ec-47ce-8c31-b612f401fb6d",
+      "id": "3487a4c2-c092-4e50-9927-5968f10915b7",
       "name": "Mes_Com_Vi",
-      "webhookId": "5cb2f9c7-1cf2-4778-9728-5fb36c6dfe0d",
+      "webhookId": "7f010cec-798b-4dd8-a3c5-e18ab2f84071",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -849,7 +830,7 @@
         1640,
         1320
       ],
-      "id": "44a6ea37-a30e-4da2-8b37-b803b3c64760",
+      "id": "0cce5331-910d-461b-965f-bfdc81ae8c76",
       "name": "If_Find"
     },
     {
@@ -944,9 +925,9 @@
         2140,
         1220
       ],
-      "id": "301b3765-2454-4c37-afcd-d61e442974c3",
+      "id": "6f7b5c40-fe7c-4aab-9410-48ccd80054ef",
       "name": "Mes_Filter_Vi",
-      "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
+      "webhookId": "8e961d49-6e4a-48e7-ad91-5d6bcd23a893",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -969,9 +950,9 @@
         1060,
         3880
       ],
-      "id": "6442a4ac-a120-46f6-878c-4f70b21da6dd",
+      "id": "a5d2df3c-ca83-4064-ac79-055852c57143",
       "name": "Mes_Com_En",
-      "webhookId": "e1fc9523-010b-413c-b405-06b3723cdbcc",
+      "webhookId": "b3793b02-f9c2-4790-85e8-28948cf4bec1",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -1010,7 +991,7 @@
         -5600,
         3500
       ],
-      "id": "1a5a1314-9227-455d-a601-6d8ecf8d4b97",
+      "id": "ebec23a2-8d2d-461d-828c-dd76f23c1f89",
       "name": "If_Call_Help"
     },
     {
@@ -1075,9 +1056,9 @@
         -5640,
         3300
       ],
-      "id": "690c310b-0751-4ad6-9ee0-0534d76df733",
+      "id": "9f623f8e-a395-4feb-bee6-2939203f6570",
       "name": "Help_Vi",
-      "webhookId": "e657a6e3-a1d4-4e12-9fed-45d3b8780bf2",
+      "webhookId": "d5717442-eb19-4518-8755-19fa1451306d",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -1147,9 +1128,9 @@
         -5340,
         3520
       ],
-      "id": "881525a4-5a7b-4761-a8b8-6ba6d3f93bb8",
+      "id": "0ec55112-8c82-4d77-91b1-61d6f9557d28",
       "name": "Help_En",
-      "webhookId": "e657a6e3-a1d4-4e12-9fed-45d3b8780bf2",
+      "webhookId": "72b88a31-1359-4794-bff3-51b5dc3f330b",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -1188,27 +1169,27 @@
         -4800,
         3520
       ],
-      "id": "c6535725-84e8-4e96-937b-729f6c01701a",
+      "id": "95bc989f-f5eb-4d9e-b2e3-fa2d42f51e31",
       "name": "If_Call_Filter"
     },
     {
       "parameters": {
         "chatId": "={{ $('Telegram Trigger').item.json.callback_query.from.id }}",
-        "text": "={{ $json.formatted_output }}",
+        "text": "={{ $('AI Agent1').item.json.output }}",
         "additionalFields": {
           "appendAttribution": false,
-          "parse_mode": "MarkdownV2"
+          "parse_mode": "HTML"
         }
       },
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -360,
+        -300,
         1960
       ],
-      "id": "108d835d-c7c9-4563-a599-a576cc2b2a07",
+      "id": "785d8552-fbb9-452b-8446-b0c1838b188f",
       "name": "Message_Response1",
-      "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
+      "webhookId": "1f4b5080-c7ab-4b93-8ba4-e2f5ee97814f",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -1219,18 +1200,18 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "={{ $json.text_message }}",
+        "text": "={{ $('Code7').item.json.question }}",
         "options": {
-          "systemMessage": "Role & Expertise\nYou are a professional-grade AI assistant with expert-level knowledge of the Cardano blockchain ecosystem. Your expertise covers all major areas including Cardano governance, staking mechanisms, network architecture, tokenomics, community initiatives, and on-chain developments.\n\nBehavioral Instructions\n\nInformation Retrieval\n\nWhen a user submits a query, immediately perform a search across the provided Cardano-related documents or knowledge base.\n\nYour primary objective is to generate a response using accurate and verifiable information from those documents.\n\nCite document sources where applicable using a consistent format.\n\nFallback to Trained Knowledge\n\nIf the requested information is not found in the documents, fall back on your internal knowledge.\n\nYour internal knowledge reflects the perspective of someone with extensive experience and long-term engagement in the Cardano ecosystem.\n\nResponse Quality & Tone\n\nEnsure all answers are factually correct, clearly structured, and accessible to both newcomers and experienced blockchain users.\n\nAvoid unnecessary jargon, but preserve technical precision.\n\nMaintain a professional, reliable, and neutral tone in all responses.\n\nOutput Objective\nDeliver clear, context-aware, and trusted answers that empower users to understand and engage confidently with the Cardano blockchain."
+          "systemMessage": "AI Assistant Persona: Cardano Ecosystem Expert\nAI Name: GovernCardanoBot\nDeveloped by: BBO Team\nI. Role & Expertise\nYou are a professional-grade AI assistant with expert-level knowledge of the Cardano blockchain ecosystem. Your expertise encompasses all critical areas, including:\n\nCardano Governance (e.g., Project Catalyst, Cardano Improvement Proposals - CIPs, cardano governance, Cardano governance action, )\nStaking Mechanisms (e.g., ADA delegation, Stake Pool operations)\nNetwork Architecture (e.g., Ouroboros consensus algorithm, Hydra scaling solution, Mithril)\nTokenomics (e.g., ADA utility, monetary policy)\nCommunity Initiatives\nOn-chain Developments (e.g., Plutus DApps, smart contracts)\nII. Core Principles & Information Retrieval\nUpon receiving a user query, your primary directive is to:\n\nPrioritize Verifiable Information: Immediately search and leverage provided Cardano-related documents or an internal knowledge base.\nCite Sources: Generate responses using accurate and verifiable information, consistently citing the document sources where applicable (e.g., [Source: Document A, Page X]).\nFallback to Expertise: If the requested information isn't found in the provided documents, fall back on your extensive internal knowledge. Your internal knowledge reflects the perspective of someone with deep, long-term engagement and experience within the Cardano ecosystem.\nIII. Response Quality & Tone\nAll responses must adhere to the following standards:\n\nFactual Accuracy: Ensure all information is factually correct.\nClarity & Structure: Present information clearly, logically structured, and easy to follow.\nAccessibility: Be accessible to both newcomers and experienced blockchain users.\nTechnical Precision: Avoid unnecessary jargon, but maintain high technical precision when required.\nProfessional Tone: Maintain a professional, reliable, and neutral tone.\nIV. Output Content & Enhanced Comprehension\nTo ensure maximum understanding and engagement, your output should consistently incorporate elements that simplify complex topics:\n\nIllustrative Examples: Provide clear, concrete examples to demonstrate concepts.\nFor instance: When explaining the staking mechanism, describe a typical user's journey from delegating ADA to receiving rewards.\nComparative Analysis: Use comparisons or analogies to relate Cardano concepts to more familiar ideas or other blockchain ecosystems (where appropriate and unbiased).\nFor example: Compare Cardano's EUTXO model to Bitcoin's UTXO for clarity.\nConceptual Visualizations/Analogies: Help users form a mental model of abstract processes or architectures.\nThink about how to describe the Ouroboros consensus mechanism using a real-world analogy, such as a parliamentary election.\nTuyệt vời, tôi hiểu rõ hơn rồi! Bạn muốn một định dạng HTML tối giản nhất, chỉ tập trung vào việc làm nổi bật các từ khóa quan trọng bằng in đậm và in nghiêng, mà không cần bất kỳ cấu trúc thẻ HTML nào khác như tiêu đề, đoạn văn hay danh sách.\n\nTôi đã điều chỉnh lại mục \"V. Output Format\" để phản ánh chính xác yêu cầu này.\n\nAI Assistant Persona: Cardano Ecosystem Expert\nAI Name: GovernCardanoBot\nDeveloped by: BBO Team\nI. Role & Expertise\nYou are a professional-grade AI assistant with expert-level knowledge of the Cardano blockchain ecosystem. Your expertise encompasses all critical areas, including:\n\nCardano Governance (e.g., Project Catalyst, Cardano Improvement Proposals - CIPs)\nStaking Mechanisms (e.g., ADA delegation, Stake Pool operations)\nNetwork Architecture (e.g., Ouroboros consensus algorithm, Hydra scaling solution, Mithril)\nTokenomics (e.g., ADA utility, monetary policy)\nCommunity Initiatives\nOn-chain Developments (e.g., Plutus DApps, smart contracts)\nII. Core Principles & Information Retrieval\nUpon receiving a user query, your primary directive is to:\n\nPrioritize Verifiable Information: Immediately search and leverage provided Cardano-related documents or an internal knowledge base.\nCite Sources: Generate responses using accurate and verifiable information, consistently citing the document sources where applicable (e.g., [Source: Document A, Page X]).\nFallback to Expertise: If the requested information isn't found in the provided documents, fall back on your extensive internal knowledge. Your internal knowledge reflects the perspective of someone with deep, long-term engagement and experience within the Cardano ecosystem.\nIII. Response Quality & Tone\nAll responses must adhere to the following standards:\n\nFactual Accuracy: Ensure all information is factually correct.\nClarity & Structure: Present information clearly, logically structured, and easy to follow.\nAccessibility: Be accessible to both newcomers and experienced blockchain users.\nTechnical Precision: Avoid unnecessary jargon, but maintain high technical precision when required.\nProfessional Tone: Maintain a professional, reliable, and neutral tone.\nIV. Output Content & Enhanced Comprehension\nTo ensure maximum understanding and engagement, your output should consistently incorporate elements that simplify complex topics:\n\nIllustrative Examples: Provide clear, concrete examples to demonstrate concepts.\nFor instance: When explaining the staking mechanism, describe a typical user's journey from delegating ADA to receiving rewards.\nComparative Analysis: Use comparisons or analogies to relate Cardano concepts to more familiar ideas or other blockchain ecosystems (where appropriate and unbiased).\nFor example: Compare Cardano's EUTXO model to Bitcoin's UTXO for clarity.\nConceptual Visualizations/Analogies: Help users form a mental model of abstract processes or architectures.\nThink about how to describe the Ouroboros consensus mechanism using a real-world analogy, such as a parliamentary election.\nV. Output Format\nAll responses must be formatted exclusively in HTML. Only use HTML tags for inline text formatting: <strong> or <b> for bold text, and <em> or <i> for italic text. Do NOT use Markdown formatting (e.g., **bold**, # heading, * list item) in your output."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        -1180,
+        -960,
         1960
       ],
-      "id": "c699a879-2d0c-4d83-ad2e-0efea4f87d27",
+      "id": "c3315204-23e7-4522-b5da-d1961c371814",
       "name": "AI Agent1"
     },
     {
@@ -1242,59 +1223,15 @@
       "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
       "typeVersion": 1.3,
       "position": [
-        -1060,
+        -840,
         2080
       ],
-      "id": "90764af5-c683-4bf5-93a2-77aef09bafef",
+      "id": "1b67d5fb-f015-491d-9328-67ef1006d143",
       "name": "Postgres Chat Memory1",
       "credentials": {
         "postgres": {
           "id": "y0YF1F4MKK5YeslP",
           "name": "Postgres account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {
-          "maxOutputTokens": 2500
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        2620,
-        3180
-      ],
-      "id": "f3b40a8a-29d9-4a6b-b37e-358340d41e95",
-      "name": "Google Gemini Chat Model",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {
-          "maxOutputTokens": 4096
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -1180,
-        2080
-      ],
-      "id": "c4b45f8c-bb1e-4bda-af6a-27b609564046",
-      "name": "Google Gemini Chat Model1",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
         }
       }
     },
@@ -1332,7 +1269,7 @@
         2460,
         2500
       ],
-      "id": "354fa877-5861-48d7-b8c5-a5adee11d4cc",
+      "id": "25e255a4-039a-45fe-9341-4190c4439d21",
       "name": "If_exist"
     },
     {
@@ -1458,7 +1395,7 @@
         2700,
         2480
       ],
-      "id": "4d4e0f25-11b9-4832-ba2b-652876ba183d",
+      "id": "a8a8f392-aca5-42bf-9a81-74503002fc2e",
       "name": "Insert_user",
       "credentials": {
         "postgres": {
@@ -1479,7 +1416,7 @@
         1660,
         2200
       ],
-      "id": "c1b956b6-c3df-4826-a1ff-c93e9d49dbea",
+      "id": "5b76c0e5-d53b-479e-a437-a4dac651d20c",
       "name": "Sticky Note4"
     },
     {
@@ -1494,7 +1431,7 @@
         1580,
         1640
       ],
-      "id": "adcc74f5-c2a6-4e37-9771-ad9dd7c81e6b",
+      "id": "11b93fb0-a684-46a2-8f76-5df8203cdc54",
       "name": "Sticky Note5"
     },
     {
@@ -1509,7 +1446,7 @@
         1520,
         1140
       ],
-      "id": "5b425066-b4cb-4af0-b062-c2fb4f0abd69",
+      "id": "742cfe01-6cec-496e-83cd-e702f093b2c9",
       "name": "Sticky Note6"
     },
     {
@@ -1543,7 +1480,7 @@
         980,
         320
       ],
-      "id": "80ab70f4-e055-4aca-9b1e-4a871d716586",
+      "id": "0401ca55-faa7-4826-9c1f-adaa9bc6aa81",
       "name": "If1"
     },
     {
@@ -1558,7 +1495,7 @@
         1600,
         800
       ],
-      "id": "d488bed8-ef09-41be-997c-1d8bc8aaefe5",
+      "id": "bbef0963-8a9b-429f-85f1-d9f656b28368",
       "name": "Postgres",
       "credentials": {
         "postgres": {
@@ -1689,9 +1626,9 @@
         1200,
         300
       ],
-      "id": "f601f67e-6771-40dd-aa7c-147da7952495",
+      "id": "10874e9f-e47d-40a3-b7b2-b07715b81bdc",
       "name": "Telegram",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "10c25900-e886-411e-9156-3445425e6fbc",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -1821,9 +1758,9 @@
         940,
         140
       ],
-      "id": "7c15a6b1-6286-4fc8-ba90-fb04222ad69a",
+      "id": "230627fc-f39a-484c-bdf9-7498473bb2ed",
       "name": "Telegram1",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "6279e0f3-73b3-4923-bff1-a1b98f9a71b4",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -1843,7 +1780,7 @@
         0,
         0
       ],
-      "id": "b113091a-f736-41b2-bca5-e2bc711cbafb",
+      "id": "2764d0ca-03ea-488a-99bf-2a80601624dc",
       "name": "Sticky Note7"
     },
     {
@@ -1860,9 +1797,9 @@
         -1500,
         3200
       ],
-      "id": "ae6312f9-ba88-47f0-b46b-b776702ad901",
+      "id": "a597e830-ed45-438a-b9f4-163efb3d6391",
       "name": "Telegram Trigger",
-      "webhookId": "1db700b1-cda0-417b-b14b-daf24bc24b8a",
+      "webhookId": "1ee99db3-c9bf-49a5-a734-4bb702774c7a",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -1882,7 +1819,7 @@
         680,
         3660
       ],
-      "id": "e350a624-cff8-4535-999e-282f3b1352fb",
+      "id": "98a078a1-0a4a-47d1-a74f-72538787c2c7",
       "name": "Sticky Note8"
     },
     {
@@ -1897,7 +1834,7 @@
         -5780,
         4320
       ],
-      "id": "deb63091-dd82-411b-a50a-ce4b8cc339b2",
+      "id": "4677b8d3-79d3-4d2c-8dcb-fa9e557f2851",
       "name": "Postgres3",
       "credentials": {
         "postgres": {
@@ -1938,7 +1875,7 @@
         -3820,
         3520
       ],
-      "id": "1f326616-11b9-446b-975c-5ddce868de49",
+      "id": "a3f47c8f-09f3-42dc-874c-24c3d52e8c03",
       "name": "If3"
     },
     {
@@ -2009,9 +1946,9 @@
         -3860,
         3320
       ],
-      "id": "c87be16d-a1e3-4168-8830-0654e5ebb9d3",
+      "id": "506ad83b-44a9-4386-8445-de2c8315f36d",
       "name": "Telegram2",
-      "webhookId": "e56b0648-3759-4ff3-aa8f-546cf2cd2e4d",
+      "webhookId": "8994819a-5b84-4e85-a046-345d7be30182",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2087,9 +2024,9 @@
         -3560,
         3540
       ],
-      "id": "f06e5555-465a-4500-82e9-0af88bda0f96",
+      "id": "7c68f7f9-3dd7-479a-8fa5-c1e25c6eb4fd",
       "name": "Telegram3",
-      "webhookId": "e56b0648-3759-4ff3-aa8f-546cf2cd2e4d",
+      "webhookId": "40759ec4-abea-4bd3-b96e-b809aab0834a",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2129,7 +2066,7 @@
         80,
         3820
       ],
-      "id": "8f5d7efc-6786-4045-9fde-5fd76bf06aad",
+      "id": "c2c63b1e-5cf6-426d-a01b-996fc3c75f5d",
       "name": "If4"
     },
     {
@@ -2147,9 +2084,9 @@
         -160,
         3720
       ],
-      "id": "b847888f-f0c3-4bb6-8eff-03cbb1de069e",
+      "id": "b300db97-797c-4f45-99a8-5054406d3ce6",
       "name": "Telegram4",
-      "webhookId": "a8af2b2c-e39b-4c93-9b2a-70e92b0d968e",
+      "webhookId": "622faee5-3ee7-4201-8e12-cc899cfaea25",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2172,9 +2109,9 @@
         320,
         3840
       ],
-      "id": "fb266898-d62c-4844-a42d-adfcce800f7e",
+      "id": "ea87727e-7549-4e4e-85f2-90fb48191fee",
       "name": "Telegram5",
-      "webhookId": "a8af2b2c-e39b-4c93-9b2a-70e92b0d968e",
+      "webhookId": "52aa6e19-02e1-40dc-a85e-cae0ba3d1de6",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2194,7 +2131,7 @@
         -240,
         3660
       ],
-      "id": "f8d6ae5a-120d-442b-ab89-70b02c03730d",
+      "id": "ea820905-f909-4d12-87ec-384450cfe0a8",
       "name": "Sticky Note9"
     },
     {
@@ -2229,7 +2166,7 @@
         580,
         4320
       ],
-      "id": "c8504885-2020-4ace-897b-b81da5a3b842",
+      "id": "4d36109c-7541-4032-9df5-981c7a1ff817",
       "name": "If5"
     },
     {
@@ -2247,9 +2184,9 @@
         800,
         4180
       ],
-      "id": "b23d0e26-9f0b-4f13-95e6-9a61ecb1ee1a",
+      "id": "817d1f67-73c6-41e9-bb38-d8348613ac58",
       "name": "Telegram7",
-      "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
+      "webhookId": "811f7aa7-78af-4d12-a7f2-54e3702ba648",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2340,7 +2277,7 @@
         1140,
         4320
       ],
-      "id": "7c090ae2-97be-4bb1-828a-f8ba9a35ff48",
+      "id": "faca528c-55b4-480e-9d3a-2e31134a9256",
       "name": "Postgres4",
       "credentials": {
         "postgres": {
@@ -2364,9 +2301,9 @@
         800,
         4460
       ],
-      "id": "17883023-fa17-4fd0-8097-07431885a713",
+      "id": "4158f3cb-c5c7-465b-af68-aa1196edb3c5",
       "name": "Telegram8",
-      "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
+      "webhookId": "dfa85f1d-273d-4640-bf09-fdf3190a6559",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2386,7 +2323,7 @@
         440,
         4100
       ],
-      "id": "850ede77-4ef9-4832-90b4-5025653e7541",
+      "id": "ff52ff3d-f2c9-478c-ae62-efee86090042",
       "name": "Sticky Note10"
     },
     {
@@ -2420,7 +2357,7 @@
         -3080,
         3540
       ],
-      "id": "b4f2c837-2d96-44c5-a6b4-c15f2c221edf",
+      "id": "915761df-28b8-495b-8b74-6ac4adb9ba9e",
       "name": "If6"
     },
     {
@@ -2437,9 +2374,9 @@
         -2780,
         3560
       ],
-      "id": "5e4b583e-9915-4c41-a6bb-45b4531f3278",
+      "id": "0b284899-f3e1-4299-8da0-60c973e4a569",
       "name": "Feedback1",
-      "webhookId": "62f2f445-ebcc-490f-94d9-b872584941c2",
+      "webhookId": "86f63a7f-6742-4b37-821c-85ef11ad7536",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2582,7 +2519,7 @@
         -4320,
         5460
       ],
-      "id": "24f139ed-06c1-4d64-95df-b49f968ab5a0",
+      "id": "2e4dfc83-ecb8-4bc3-b9e0-382a67792b1d",
       "name": "Postgres6",
       "credentials": {
         "postgres": {
@@ -2606,9 +2543,9 @@
         -4020,
         4840
       ],
-      "id": "ec07688f-107a-4a73-b64c-3aec9ef2277c",
+      "id": "e2373f74-4176-4eef-b8e6-050e473b9d7f",
       "name": "Telegram6",
-      "webhookId": "c47f6a2e-0f37-49fa-9835-c430c760876e",
+      "webhookId": "caa54ada-e378-44a8-a506-62a8c475d7e7",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2648,7 +2585,7 @@
         -4020,
         5460
       ],
-      "id": "26fdd23f-043e-48ef-9cc2-363e5e7d5038",
+      "id": "6d576dec-2dd6-4a08-be1f-341d42b92aba",
       "name": "If7"
     },
     {
@@ -2665,9 +2602,9 @@
         -4020,
         5840
       ],
-      "id": "d01d28f2-967f-4dd1-b4e8-714df1513a0d",
+      "id": "84e9ce9c-7bc8-4f8c-8e19-3032418b04ef",
       "name": "Telegram9",
-      "webhookId": "c47f6a2e-0f37-49fa-9835-c430c760876e",
+      "webhookId": "6c575d70-4d09-4052-bc16-07872a232941",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2811,7 +2748,7 @@
         -4320,
         5100
       ],
-      "id": "28287caa-01a8-4a43-874d-80fd01831c76",
+      "id": "58e7df6e-2969-4652-bdad-0ca9bea1d329",
       "name": "Postgres7",
       "credentials": {
         "postgres": {
@@ -2852,7 +2789,7 @@
         -4020,
         5100
       ],
-      "id": "f9525aa9-c4dc-4c61-b1e3-e9d31c77ab42",
+      "id": "b8806dd3-1e7d-4730-9a2e-2ae7f52eccd1",
       "name": "If8"
     },
     {
@@ -2872,7 +2809,7 @@
         -5520,
         1720
       ],
-      "id": "31e18256-8655-410a-83ea-4b1079968a26",
+      "id": "8cb87790-f74a-4a9c-b6e7-895c844c468a",
       "name": "Schedule Trigger",
       "disabled": true
     },
@@ -2888,7 +2825,7 @@
         -5260,
         1720
       ],
-      "id": "1e2fc87a-14e5-4b83-b79c-22f5121c4a63",
+      "id": "df8add1c-9ece-4112-a833-811f8af40295",
       "name": "Postgres8",
       "credentials": {
         "postgres": {
@@ -2928,9 +2865,9 @@
         -4580,
         1720
       ],
-      "id": "672cea3e-c4e3-439e-ae15-4d5d1a453d1a",
+      "id": "f6cb6880-4e5e-4f95-a9ac-f28f2119c132",
       "name": "Telegram10",
-      "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
+      "webhookId": "b473413d-bed3-4428-82f5-0c424eedcc06",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -2948,7 +2885,7 @@
         -5040,
         1720
       ],
-      "id": "0b0a52bb-f278-4a09-aec5-cd92181b58e6",
+      "id": "731a14b4-bfad-49ca-974b-255815403035",
       "name": "Code"
     },
     {
@@ -2964,7 +2901,7 @@
         -5640,
         1580
       ],
-      "id": "7f83703e-0386-4d8c-a793-edbfc872420a",
+      "id": "6c22e309-3b0a-43a6-9c53-bfe5ab8a1b7c",
       "name": "Sticky Note12"
     },
     {
@@ -2998,7 +2935,7 @@
         -1820,
         5120
       ],
-      "id": "75f17de8-cc46-4acf-9ab2-e504466a509a",
+      "id": "54f60247-db74-456c-a080-5101367ced8d",
       "name": "If9"
     },
     {
@@ -3013,7 +2950,7 @@
         -1560,
         5100
       ],
-      "id": "d8e36344-ca26-40eb-848b-5c5f1e13ab74",
+      "id": "c037f1a2-4c38-4225-9ba6-fd42801c6da8",
       "name": "Postgres9",
       "credentials": {
         "postgres": {
@@ -3032,7 +2969,7 @@
         -1060,
         5100
       ],
-      "id": "1f9cb585-4e7c-44c9-b8de-5c1d4236be37",
+      "id": "ae78fa69-dfec-4184-9f75-573a84c6b6da",
       "name": "Code1"
     },
     {
@@ -3054,9 +2991,9 @@
         -860,
         5100
       ],
-      "id": "23dad4ce-6b83-452c-9002-0e3722555f4f",
+      "id": "6e0976ad-28c0-43fc-b158-ab2dfd168a43",
       "name": "Telegram11",
-      "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
+      "webhookId": "f37872db-b2e0-486d-ad04-f7a7430b40e5",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -3074,7 +3011,7 @@
         -1300,
         5100
       ],
-      "id": "448298bb-4dc2-44c2-8e32-d374efd0bf32",
+      "id": "0065a729-2d9d-4960-9df8-ba14a8d9628d",
       "name": "codefunction"
     },
     {
@@ -3090,7 +3027,7 @@
         -1960,
         4940
       ],
-      "id": "95f7d42a-c0ad-4d60-b5d1-b37ec3bb11d9",
+      "id": "013112a4-9c8b-46ba-84ad-9cbbb4d50829",
       "name": "Sticky Note13"
     },
     {
@@ -3109,7 +3046,7 @@
         -5420,
         2200
       ],
-      "id": "ab3995b0-5008-4461-94cb-b6a14f0d699d",
+      "id": "cc19a8d6-21f1-49ac-a90d-931942c86927",
       "name": "Schedule Trigger2",
       "disabled": true
     },
@@ -3130,7 +3067,7 @@
         -5180,
         2240
       ],
-      "id": "725913e7-f8ca-49ee-92c4-282dcdb6e337",
+      "id": "d82bb22a-15cb-4c38-8fbc-32249938bdef",
       "name": "GetProposals1"
     },
     {
@@ -3149,7 +3086,7 @@
         -5180,
         2060
       ],
-      "id": "5584bd7a-c5f6-4cca-ad8f-cb071bd55757",
+      "id": "a5045fd3-9370-440a-ad80-f468ec7c49f8",
       "name": "GetStoredProposals1",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -3168,7 +3105,7 @@
         -4360,
         2240
       ],
-      "id": "d400c613-148a-43a4-bc1d-b78f9da017ba",
+      "id": "8f680e0c-6e81-4743-85f6-3eb0a3e8f35f",
       "name": "CompareProposals1"
     },
     {
@@ -3202,7 +3139,7 @@
         -4120,
         2240
       ],
-      "id": "8957658d-3172-4f9f-92b6-165cb1d04d92",
+      "id": "41628246-afea-4f74-92d4-e1d8d3fa0569",
       "name": "If11"
     },
     {
@@ -3223,7 +3160,7 @@
         -4740,
         2520
       ],
-      "id": "cb87de0d-3bf7-4f34-a1ec-6b600a2d694f",
+      "id": "5359a064-a09a-413e-afee-044fb7d20fe4",
       "name": "Google Drive1",
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -3245,7 +3182,7 @@
         -5640,
         2000
       ],
-      "id": "e34f841c-3e3f-47bd-ae57-e9960fa297ce",
+      "id": "7d6eec84-8e94-4252-ad6b-ba76d1b47d72",
       "name": "Sticky Note14"
     },
     {
@@ -3268,7 +3205,7 @@
         -5160,
         2520
       ],
-      "id": "f678e30e-4388-441e-bda7-93412362e1e5",
+      "id": "1a3b2fcc-7beb-4c56-b1ee-353fd45179af",
       "name": "set_convert"
     },
     {
@@ -3283,7 +3220,7 @@
         -4960,
         2520
       ],
-      "id": "6d26d331-6395-4821-99cf-5b31c8172eba",
+      "id": "7ef3146b-5949-4000-8d38-3d817a3c2562",
       "name": "Convert to File"
     },
     {
@@ -3298,7 +3235,7 @@
         -4520,
         2520
       ],
-      "id": "e6d4222d-eb36-4f90-bd6b-7cf03f458e52",
+      "id": "0afd8a6d-7215-4da6-b5df-a704d4ab9e84",
       "name": "Postgres10",
       "credentials": {
         "postgres": {
@@ -3317,7 +3254,7 @@
         -4320,
         2520
       ],
-      "id": "73c1242e-c3e6-4a0f-88ff-0b854d2c1c84",
+      "id": "7239f71d-3310-424f-b684-2026a56c8a5e",
       "name": "Code2"
     },
     {
@@ -3334,9 +3271,9 @@
         -4140,
         2520
       ],
-      "id": "2580c0c7-11af-4378-a717-ad5e796f634b",
+      "id": "876d9384-8fc3-4de1-8225-004715b3cfb0",
       "name": "Telegram12",
-      "webhookId": "39b523aa-eac0-4098-8a55-2bc1efb8091b",
+      "webhookId": "5a485df1-1bf6-47ff-b926-41ccacb8cabd",
       "credentials": {
         "telegramApi": {
           "id": "xlTMBHvEal44w0FQ",
@@ -3356,7 +3293,7 @@
         -4960,
         2060
       ],
-      "id": "424f69b2-de2b-4459-beab-59448b097031",
+      "id": "57e18510-d9e5-4f10-9ec3-609c0d620ca8",
       "name": "jsonconvertold"
     },
     {
@@ -3379,7 +3316,7 @@
         -4720,
         2060
       ],
-      "id": "521e9ab9-270b-49f1-aa37-83b87649c85f",
+      "id": "e0e5884b-2dca-4ff7-8429-e9187763d533",
       "name": "set_convert1"
     },
     {
@@ -3392,7 +3329,7 @@
         -4500,
         2060
       ],
-      "id": "ac81e8a6-4fcc-4eff-b5a0-e21a8cf7a2e6",
+      "id": "10563ae8-41f0-4f55-ad39-cbfa1058baf0",
       "name": "CodeConvert"
     },
     {
@@ -3405,28 +3342,8 @@
         -5400,
         2520
       ],
-      "id": "a819a6a1-328c-4b78-8e34-08cfe31fea03",
+      "id": "e81ceb70-94e2-4436-a1ed-2e3cf187d679",
       "name": "newProposal"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        3180,
-        3360
-      ],
-      "id": "397a20b3-bd72-4ac9-8211-613956e404ef",
-      "name": "Google Gemini Chat Model2",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
-        }
-      }
     },
     {
       "parameters": {
@@ -3434,12 +3351,12 @@
         "description": "Contains all the user's documents that you can check for context to answer user questions.",
         "topK": 5
       },
-      "id": "19be783a-38eb-481b-a3b2-74b60c887247",
+      "id": "ebf1867e-fadf-4f89-b928-19a1a20e545b",
       "name": "Retrieve Documents1",
       "type": "@n8n/n8n-nodes-langchain.toolVectorStore",
       "typeVersion": 1,
       "position": [
-        -540,
+        -320,
         2160
       ]
     },
@@ -3458,56 +3375,15 @@
       "type": "@n8n/n8n-nodes-langchain.vectorStoreSupabase",
       "typeVersion": 1.1,
       "position": [
-        -980,
+        -760,
         2260
       ],
-      "id": "4638614f-cadb-454b-b934-86aec76518b1",
+      "id": "c74f3540-14db-4d3f-acf4-8368bc521a18",
       "name": "Supabase Vector Store1",
       "credentials": {
         "supabaseApi": {
           "id": "nldB6zRahygpLVhq",
           "name": "Supabase  Phuc's account "
-        }
-      }
-    },
-    {
-      "parameters": {
-        "modelName": "models/text-embedding-004"
-      },
-      "type": "@n8n/n8n-nodes-langchain.embeddingsGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -1060,
-        2300
-      ],
-      "id": "be2cfb55-3044-44d4-a981-dc475c173b71",
-      "name": "Embeddings Google Gemini1",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {
-          "maxOutputTokens": 4096
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -460,
-        2260
-      ],
-      "id": "5f4f5bbf-5b7c-4a04-b4b0-b09a3188dac8",
-      "name": "Google Gemini Chat Model3",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "Nk7Pd9f1YTDyhp5Z",
-          "name": "Google Gemini(PaLM) Api account 2"
         }
       }
     },
@@ -3521,7 +3397,7 @@
         -4820,
         1720
       ],
-      "id": "4ab6e21a-44a8-4816-8703-7c3db9d9c80c",
+      "id": "8356cf02-e71d-4ab8-a824-b1cbad7bc386",
       "name": "Code3"
     },
     {
@@ -3534,7 +3410,7 @@
         1360,
         4320
       ],
-      "id": "5eb54dbe-6015-4cbb-8392-3ff16d734416",
+      "id": "4f24862a-1a6e-4254-b173-d223c4ebeda2",
       "name": "Code4"
     },
     {
@@ -3552,9 +3428,9 @@
         1580,
         4320
       ],
-      "id": "e4f11488-6dea-4fe8-a359-91a709d511ed",
+      "id": "6697f1fe-3619-4558-9402-193d93ce5f20",
       "name": "Telegram13",
-      "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
+      "webhookId": "db39e02c-535a-4e85-ba72-ace8f73d1b97",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -3577,9 +3453,9 @@
         -2360,
         3320
       ],
-      "id": "fdca0675-ee91-4961-8d43-5dd05cd0ddd7",
+      "id": "af3e8153-0d02-4613-8f5e-568e26adb7ac",
       "name": "Telegram14",
-      "webhookId": "e8ecaa39-ddb3-469a-8176-fd7daec63f6e",
+      "webhookId": "4b4d9540-16ed-487e-b3d0-4ae2e2f61c7e",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -3619,7 +3495,7 @@
         -2320,
         3540
       ],
-      "id": "ecf4a428-8a00-4099-97fe-b808c3045da5",
+      "id": "f67af9b5-c510-4aff-83cc-c8c669394715",
       "name": "If10"
     },
     {
@@ -3637,9 +3513,9 @@
         -2060,
         3560
       ],
-      "id": "447e472e-52b8-4b4f-9d84-df8a44880a35",
+      "id": "1d3f515c-e8c8-48d0-90b6-a2eb3977efb6",
       "name": "Telegram15",
-      "webhookId": "e8ecaa39-ddb3-469a-8176-fd7daec63f6e",
+      "webhookId": "90362a3d-275e-4ee9-8829-f96636aeb3b9",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -3781,21 +3657,8 @@
         1380,
         740
       ],
-      "id": "98b4f4d9-ffe7-4ccd-942a-d1b9fc13015a",
+      "id": "789cb6f3-4885-4e45-9671-180ef34f7796",
       "name": "Switch1"
-    },
-    {
-      "parameters": {
-        "jsCode": "const text = $json.output;\nconst escapedText = text.replace(/([_*[\\]()~`>#+-.!])/g, '\\\\$1');\nreturn { formatted_output: escapedText };"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        -600,
-        1960
-      ],
-      "id": "b4057cc8-1678-43c0-a41a-84eadd101b59",
-      "name": "Code5"
     },
     {
       "parameters": {
@@ -3811,7 +3674,7 @@
         -2980,
         5340
       ],
-      "id": "99cb1dc7-74e2-4184-8037-16eadf5b62e7",
+      "id": "c3fd5851-4bf7-436e-b7ad-72c863406e39",
       "name": "AI Agent3"
     },
     {
@@ -3825,28 +3688,8 @@
         -2860,
         5440
       ],
-      "id": "2b11230a-cd9f-4006-b879-c291ff972110",
+      "id": "82537048-87d5-43e8-9ea3-bd078b6b5035",
       "name": "HTTP Request"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2960,
-        5440
-      ],
-      "id": "e336017d-19cf-42f4-9f54-e6b674e072f5",
-      "name": "Google Gemini Chat Model6",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -3863,9 +3706,9 @@
         -2300,
         5640
       ],
-      "id": "86953e9c-2931-44a0-83d6-5166e6a55c4a",
+      "id": "94f9395e-5114-4cbb-87f9-f6f68c7644f3",
       "name": "Message_Response2",
-      "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
+      "webhookId": "8159c5df-1903-4492-8c11-351472c1a44e",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -3887,7 +3730,7 @@
         -2900,
         5640
       ],
-      "id": "3a6f34a9-262a-4a8f-8601-296c3bf26bf2",
+      "id": "2bad1cea-710b-4a64-949f-c57fd4bbd741",
       "name": "AI Agent4"
     },
     {
@@ -3899,30 +3742,10 @@
       "typeVersion": 1.1,
       "position": [
         -2780,
-        5760
-      ],
-      "id": "701a2cde-6b16-4fd4-8a95-6568191bc7ae",
-      "name": "HTTP Request1"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2880,
         5740
       ],
-      "id": "fb4f3b6f-f754-44bb-bf3e-50b4cb14ef7e",
-      "name": "Google Gemini Chat Model7",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
+      "id": "9ac69d0f-0742-4c09-be7f-ff2f6ab6f7e4",
+      "name": "HTTP Request1"
     },
     {
       "parameters": {
@@ -3934,7 +3757,7 @@
         -2500,
         5640
       ],
-      "id": "da157fd1-b8bc-4b03-a8c2-379564e6d707",
+      "id": "78ad58c8-9db2-4845-82c6-43d663df7c75",
       "name": "Code6"
     },
     {
@@ -3951,7 +3774,7 @@
         -3040,
         5000
       ],
-      "id": "17f7bd9e-f975-46e9-ae65-b4aa830eee00",
+      "id": "514315e5-0462-4cf3-9485-001e797c3bb9",
       "name": "AI Agent5"
     },
     {
@@ -3981,31 +3804,11 @@
       "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
       "typeVersion": 1.1,
       "position": [
-        -2900,
-        5140
+        -2880,
+        5100
       ],
-      "id": "f84bcd47-2d19-4fe3-8d7b-908bbd3e3e63",
+      "id": "ce060e4a-595d-4066-a215-7eb94c6a2ff2",
       "name": "HTTP Request2"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -3020,
-        5120
-      ],
-      "id": "fa885394-5bf6-4f03-9ffe-e3a1cc84ce17",
-      "name": "Google Gemini Chat Model8",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -4019,7 +3822,7 @@
         -3240,
         5000
       ],
-      "id": "c5632567-ca2c-4912-b7c1-ee93f1f80656",
+      "id": "13c400b9-b798-4ec4-871a-b7b3e2e46c07",
       "name": "Postgres13",
       "credentials": {
         "postgres": {
@@ -4042,7 +3845,7 @@
         -2980,
         5980
       ],
-      "id": "0682fc00-1d95-42d6-aa8c-f579571805bc",
+      "id": "276286e3-b63a-449a-8ad2-6a1e77c6b768",
       "name": "AI Agent6"
     },
     {
@@ -4056,28 +3859,8 @@
         -2820,
         6100
       ],
-      "id": "f2c65a90-32d5-497a-83f0-599c6704c76d",
+      "id": "4f411c78-f905-415d-b44a-71392ffc9f1d",
       "name": "HTTP Request3"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2960,
-        6100
-      ],
-      "id": "d36b5839-733f-4eab-80af-0eea0b8de429",
-      "name": "Google Gemini Chat Model9",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -4092,7 +3875,7 @@
         -3340,
         4920
       ],
-      "id": "f97f5855-2a0e-43a9-b9e4-8dc9ba150a90",
+      "id": "cb372ca5-8df8-4325-9c7b-5473cbc3db15",
       "name": "Sticky Note16"
     },
     {
@@ -4126,7 +3909,7 @@
         980,
         760
       ],
-      "id": "a35f638e-3bac-4469-9439-9be888aef2bb",
+      "id": "b7ad4615-a20b-4de4-9511-e9e9b39c40ec",
       "name": "If13"
     },
     {
@@ -4227,9 +4010,9 @@
         1160,
         740
       ],
-      "id": "2d4f934e-369f-440c-913d-c870fe0029d0",
+      "id": "be66350a-fabf-4f11-a2ff-0dd23309988c",
       "name": "Telegram19",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "6ec17541-39b1-4caa-8fff-bca9cb675f69",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -4335,9 +4118,9 @@
         1020,
         600
       ],
-      "id": "d88ce3af-252a-46e3-8e5f-af37c7e509ee",
+      "id": "9e5ffb88-cc10-4776-9595-62cbd65e285d",
       "name": "Telegram20",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "2f4b7544-35c2-4354-b74b-40c3a7623aea",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -4359,7 +4142,7 @@
         -2980,
         7060
       ],
-      "id": "332ce8de-a5b2-4b24-b107-3ef279928aca",
+      "id": "d031cf51-0470-40a1-82c6-64b39de93321",
       "name": "AI Agent7"
     },
     {
@@ -4373,28 +4156,8 @@
         -2820,
         7200
       ],
-      "id": "bd6fff5a-b74e-4553-8468-26233edba6d1",
+      "id": "19fa1f16-f4c5-4ec3-a355-4ea7c28b0597",
       "name": "HTTP Request4"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2960,
-        7180
-      ],
-      "id": "312e4bcc-c50c-4059-aa26-46d6be58b0ee",
-      "name": "Google Gemini Chat Model10",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -4411,9 +4174,9 @@
         -2300,
         7060
       ],
-      "id": "c5a60f8a-cba4-4fa9-9c22-998bfa44127c",
+      "id": "52813ec0-6367-430a-a482-8330fa5971ad",
       "name": "Message_Response6",
-      "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
+      "webhookId": "138db06e-4bd5-4148-81ab-56b358bdc322",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -4435,7 +4198,7 @@
         -2960,
         7380
       ],
-      "id": "0c43573f-1de0-4821-ae76-2f8b4087fb19",
+      "id": "8b3e4736-b543-4239-91c4-2ac1dd6a7705",
       "name": "AI Agent8"
     },
     {
@@ -4449,28 +4212,8 @@
         -2780,
         7500
       ],
-      "id": "24bf599d-3e52-41e0-9871-e2cd48046d88",
+      "id": "f1da69b4-41dd-4655-a167-ac0dc1b604bd",
       "name": "HTTP Request5"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2940,
-        7500
-      ],
-      "id": "f5cd45fc-0fee-41aa-b338-194f3dbdaf7d",
-      "name": "Google Gemini Chat Model11",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -4482,7 +4225,7 @@
         -2520,
         7060
       ],
-      "id": "9d5c817d-0315-4da9-b964-c1982ae26791",
+      "id": "556081b0-8b59-4069-948d-603586bdd8e3",
       "name": "Code10"
     },
     {
@@ -4499,7 +4242,7 @@
         -2980,
         6720
       ],
-      "id": "6875d253-ff0d-4fe0-8e13-306ab195639d",
+      "id": "5a55b641-7b7d-402d-bba8-3fcea6928ad4",
       "name": "AI Agent9"
     },
     {
@@ -4532,28 +4275,8 @@
         -2840,
         6840
       ],
-      "id": "060226ac-b9c5-459c-af32-c9ad59f79a64",
+      "id": "e9f36695-fea1-4ef5-99f1-1af02b72bc4f",
       "name": "HTTP Request6"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2960,
-        6840
-      ],
-      "id": "3b73910e-428d-4534-a3a1-c38b545b372e",
-      "name": "Google Gemini Chat Model12",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -4567,7 +4290,7 @@
         -3220,
         6720
       ],
-      "id": "32b7ef42-429a-4963-bf7a-51d9cffffe2f",
+      "id": "939810f8-93f1-4969-a9a9-e950cc897b76",
       "name": "Postgres17",
       "credentials": {
         "postgres": {
@@ -4589,7 +4312,7 @@
         -3340,
         6640
       ],
-      "id": "3b77f834-e6d1-4a30-a391-0f3e82858ae0",
+      "id": "2a406184-3e43-43c6-a907-ef0d07fe2c13",
       "name": "Sticky Note17"
     },
     {
@@ -4623,7 +4346,7 @@
         220,
         280
       ],
-      "id": "c8e0e1e0-ac34-4d40-92f5-33afeaa1bedd",
+      "id": "96e87511-ac55-4ddc-ad64-d6e460b74b60",
       "name": "If14"
     },
     {
@@ -4712,9 +4435,9 @@
         420,
         260
       ],
-      "id": "4cee7880-1298-4b01-b1f8-0012e5ff7da3",
+      "id": "6292d1ae-3bef-4b45-87d6-5551bf259398",
       "name": "Telegram21",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "4c7f563c-d555-42c1-88fe-7861617543ee",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -4808,9 +4531,9 @@
         120,
         120
       ],
-      "id": "fb820b67-4cd3-4f3f-9ee9-749166d1452b",
+      "id": "bdadc184-fc6f-4ae2-8b97-a97b04868b5a",
       "name": "Telegram22",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "d6786203-fe31-4b10-bf85-0574e49a09a4",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -4832,7 +4555,7 @@
         -2920,
         7820
       ],
-      "id": "61a17a14-fb2c-4349-bd9a-d0ae28999ce9",
+      "id": "0624bef8-cbb4-40da-b358-a91fa9668c02",
       "name": "AI Agent10"
     },
     {
@@ -4846,28 +4569,8 @@
         -2760,
         7940
       ],
-      "id": "ec3ccd79-3cef-47a1-aa38-e96fbf1c592c",
+      "id": "c2ad03fc-4410-4b33-a14f-0f0bbea50753",
       "name": "HTTP Request7"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2920,
-        7940
-      ],
-      "id": "976c4fac-7d3a-404f-8a9b-748a93a327ea",
-      "name": "Google Gemini Chat Model13",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -4884,9 +4587,9 @@
         -2340,
         7980
       ],
-      "id": "80a0b1b8-7e51-41ce-a073-217f5ff5bf21",
+      "id": "1f8a40e2-719e-4f8a-a390-b199e2bdb660",
       "name": "Message_Response9",
-      "webhookId": "4a15a206-bd65-4f58-bdbc-afb595bfc89e",
+      "webhookId": "b1f7c9b3-9fc5-41a8-8a7e-9b6763adce2f",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -4908,7 +4611,7 @@
         -2940,
         8140
       ],
-      "id": "8a494a44-51c5-4f24-8c52-9309e45398a3",
+      "id": "443f8ce1-840c-4e66-bc90-95bd3d8496c5",
       "name": "AI Agent11"
     },
     {
@@ -4922,28 +4625,8 @@
         -2760,
         8260
       ],
-      "id": "eb670cf6-f0c2-4cfb-ba02-f4929765e875",
+      "id": "49adc4ac-eb8f-4d6f-ad25-32cdbbb65092",
       "name": "HTTP Request8"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2920,
-        8260
-      ],
-      "id": "4fb20a2f-6cda-43ee-94c6-625800f38314",
-      "name": "Google Gemini Chat Model14",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -4955,7 +4638,7 @@
         -2540,
         7980
       ],
-      "id": "8f500a9e-1017-4bb6-bc73-efd270366724",
+      "id": "8fec121d-1fe3-4e72-9280-6ebcef0c1279",
       "name": "Code13"
     },
     {
@@ -4970,7 +4653,7 @@
         -3200,
         7820
       ],
-      "id": "09fc2b14-feda-4173-ba7d-c8baa0600f5f",
+      "id": "d77adc0e-f5b4-4dd3-9e12-fb094a50e706",
       "name": "Postgres19",
       "credentials": {
         "postgres": {
@@ -4992,7 +4675,7 @@
         -3340,
         7700
       ],
-      "id": "6ed2802c-a86e-4cec-8272-323596be781d",
+      "id": "8baf4e5e-a810-44e3-a099-689a292e37ce",
       "name": "Sticky Note19"
     },
     {
@@ -5009,7 +4692,7 @@
         -3000,
         6320
       ],
-      "id": "c0d0b572-78f6-4c49-9b8c-451782d5caf2",
+      "id": "23c09624-db12-49da-8672-096c8c2e77e7",
       "name": "AI Agent12"
     },
     {
@@ -5023,28 +4706,8 @@
         -2820,
         6460
       ],
-      "id": "7fc5d2ea-9d4c-4c18-9090-c763bf1420b9",
+      "id": "a2ff5f5c-9b34-4d9b-a1fc-4c307cf5a3e4",
       "name": "HTTP Request9"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.0-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        -2980,
-        6440
-      ],
-      "id": "6c09d4b0-e931-4616-ba99-7f3c378e4fb0",
-      "name": "Google Gemini Chat Model15",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "eUIE30XHECF8JRZ7",
-          "name": "Google Gemini(PaLM) Api account"
-        }
-      }
     },
     {
       "parameters": {
@@ -5078,7 +4741,7 @@
         560,
         4900
       ],
-      "id": "fea4acf1-7eed-47e9-9f6f-463afe35a9d3",
+      "id": "be830ff9-9bd2-4e6d-b66c-675295059814",
       "name": "If12"
     },
     {
@@ -5096,9 +4759,9 @@
         860,
         4780
       ],
-      "id": "d720df74-dc5d-40e5-89e3-0b479995833c",
+      "id": "0198a49e-9008-4428-a024-f613f9e3aa33",
       "name": "Telegram17",
-      "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
+      "webhookId": "43d0f436-fdd9-45e6-bd2f-7ee35d86482d",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -5120,9 +4783,9 @@
         860,
         5000
       ],
-      "id": "5bab8918-6a21-47b6-b18c-68b3ab0b4af1",
+      "id": "3292eaf7-56e5-4018-929b-ee34ada0bba0",
       "name": "Telegram18",
-      "webhookId": "8f2cf665-bcbd-4670-b62b-80fb13d1a198",
+      "webhookId": "b8ce0de7-fc3a-4bc6-8026-9a3a7fc2de6b",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -5142,7 +4805,7 @@
         440,
         4720
       ],
-      "id": "8e6ca0c4-cca8-42b9-bdf3-d598ab4731c0",
+      "id": "4332cf4e-ffbd-4ce7-b0bf-8b2739237b9d",
       "name": "Sticky Note18"
     },
     {
@@ -5155,7 +4818,7 @@
         1120,
         4900
       ],
-      "id": "0c983988-33a8-4c53-ba38-0a13dc498a85",
+      "id": "b7945f81-709a-416f-815b-05a5cf08cf21",
       "name": "Code9"
     },
     {
@@ -5304,7 +4967,7 @@
         1320,
         4900
       ],
-      "id": "c308e6d0-1e3c-4cce-9634-ed1b29977dab",
+      "id": "eb027662-6fd6-4fad-aa7a-0dd7e5dd58e3",
       "name": "Postgres14",
       "credentials": {
         "postgres": {
@@ -5325,7 +4988,7 @@
         2720,
         3180
       ],
-      "id": "5ba49f25-5c9c-456c-8f58-eeebd6582597",
+      "id": "8c0088f7-1f6c-4033-85e4-6ab414372eb3",
       "name": "Postgres Chat Memory4",
       "notesInFlow": false,
       "credentials": {
@@ -5350,9 +5013,9 @@
         3100,
         2480
       ],
-      "id": "4d02581b-16c6-405a-a3fa-8b4d0c464b42",
+      "id": "bb95e0b9-146c-4480-b005-3c4898e54d18",
       "name": "Telegram23",
-      "webhookId": "9f006843-3af4-4e38-9545-140979bb4a6e",
+      "webhookId": "4dfa3a6c-4f15-4017-aa8f-00b442905146",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -5370,7 +5033,7 @@
         2900,
         2480
       ],
-      "id": "54cd4b59-8701-43d4-8da5-0a83e075d40b",
+      "id": "6485a22d-d3a2-4767-8229-6fd9d255f1b7",
       "name": "Code8"
     },
     {
@@ -5404,7 +5067,7 @@
         260,
         760
       ],
-      "id": "1e04087e-8a20-442e-9ca3-100b47d6bb44",
+      "id": "999a3423-fe09-473c-97be-89ac66179db6",
       "name": "If16"
     },
     {
@@ -5469,9 +5132,9 @@
         440,
         740
       ],
-      "id": "52811bfe-4a81-47f1-a8ed-402353062559",
+      "id": "570aa78e-6dfd-4ad6-adb2-5c4d9d5bcb6d",
       "name": "Telegram24",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "e748797e-ba00-46f2-a92b-661a84aad3ce",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -5541,9 +5204,9 @@
         200,
         600
       ],
-      "id": "741559e3-914d-4887-a67e-6b12d9561503",
+      "id": "a208d8b8-8378-4512-a530-ef6b7ed4b23c",
       "name": "Telegram25",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "07693e8c-a381-45ad-89ef-84423c3074cf",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -5563,7 +5226,7 @@
         -3240,
         5340
       ],
-      "id": "457aeb96-ada4-4c3f-ba3f-d015ee7dff7e",
+      "id": "f71e003b-d1c2-4b8a-acdf-c633670e61cc",
       "name": "Postgres15",
       "credentials": {
         "postgres": {
@@ -5584,7 +5247,7 @@
         -3220,
         5640
       ],
-      "id": "58bab6c6-b540-4c6b-9fe2-043343704b14",
+      "id": "7b24fd79-d711-4559-b443-b371db061f36",
       "name": "Postgres16",
       "credentials": {
         "postgres": {
@@ -5605,7 +5268,7 @@
         -3220,
         5980
       ],
-      "id": "cb1b4a0f-f225-4d34-9da4-ce9cb9f53e13",
+      "id": "e09c1e58-e3a5-4d52-baee-19796a8d8f5b",
       "name": "Postgres18",
       "credentials": {
         "postgres": {
@@ -5626,7 +5289,7 @@
         -3220,
         6320
       ],
-      "id": "267fe5f5-a3ed-4e42-a234-b5f13499fc65",
+      "id": "15482d66-5233-415d-bcc3-988533928396",
       "name": "Postgres20",
       "credentials": {
         "postgres": {
@@ -5647,7 +5310,7 @@
         -3220,
         7380
       ],
-      "id": "24f3b988-c29d-4fc5-bfa0-3fe821318a88",
+      "id": "ab0315cd-9a99-49ba-81ae-e1dc94b32942",
       "name": "Postgres21",
       "credentials": {
         "postgres": {
@@ -5668,7 +5331,7 @@
         -3220,
         7060
       ],
-      "id": "255dc42b-dd56-408f-8c5b-32237376661f",
+      "id": "4857d1c0-8960-4e55-aed7-76aa8de68140",
       "name": "Postgres22",
       "credentials": {
         "postgres": {
@@ -5689,7 +5352,7 @@
         -3200,
         8140
       ],
-      "id": "8c36796f-b20d-4ff3-ad9e-f9ebec31d81f",
+      "id": "fff16343-0c72-487b-9d04-0288b0b7fbf4",
       "name": "Postgres23",
       "credentials": {
         "postgres": {
@@ -5729,7 +5392,7 @@
         -1180,
         3200
       ],
-      "id": "032a1c75-76e5-407d-a3bc-7c79e6c069c0",
+      "id": "7053bc0c-6f38-4acd-88cb-a0c54ef11dc4",
       "name": "If15"
     },
     {
@@ -5742,7 +5405,7 @@
         1880,
         1220
       ],
-      "id": "231c22f1-1045-40ec-b42b-ba16f676cbf5",
+      "id": "46f654d6-d491-4058-9857-793ec443a849",
       "name": "CodeRandom"
     },
     {
@@ -5755,7 +5418,7 @@
         1880,
         1420
       ],
-      "id": "93535f5d-09ae-4a83-8615-1e115e2f1eba",
+      "id": "ed8c1966-3b90-485d-9df9-ed2caf01ba8f",
       "name": "CodeRandom1"
     },
     {
@@ -5772,9 +5435,9 @@
         2340,
         3020
       ],
-      "id": "af25fb54-c528-4a62-a53e-6b779fa1b020",
+      "id": "77de508b-a4df-4e9f-8a23-690a5278a79a",
       "name": "Telegram27",
-      "webhookId": "a8c67252-0436-4e80-b080-49391d923525",
+      "webhookId": "66ffa6a7-4584-4280-8c80-5e5af869ec94",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -5794,9 +5457,9 @@
         2960,
         3020
       ],
-      "id": "f4b3860a-f3f2-4f7e-b42b-f55a3fcafd4c",
+      "id": "4d65f69b-6112-4625-b1da-be9a2cc27928",
       "name": "Telegram28",
-      "webhookId": "c0ed9ff5-579d-434d-bd96-01ee34a7c79b",
+      "webhookId": "638549e8-6e95-477f-a898-f3c0da472284",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -5896,9 +5559,9 @@
         2140,
         1420
       ],
-      "id": "f132c56e-4afb-4e66-976c-8599736e755e",
+      "id": "95a523ab-d258-4cf4-b1a3-4dbdf58613a9",
       "name": "Mes_Filter_EN",
-      "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
+      "webhookId": "2efea61f-ddf7-4912-b7ca-d63d7a467afc",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -6542,7 +6205,7 @@
         -1340,
         3720
       ],
-      "id": "21173a76-dc40-4dfd-a792-eeb04802e163",
+      "id": "89d93c41-5ba8-4c78-a180-b014c9ccd98a",
       "name": "Switch Call Back"
     },
     {
@@ -6555,7 +6218,7 @@
         -4900,
         3320
       ],
-      "id": "0316735e-f0c3-4f20-85af-06117e14044b",
+      "id": "29f510cb-7a25-4993-808f-8c13ea0cfaea",
       "name": "CodeRandom2"
     },
     {
@@ -6568,7 +6231,7 @@
         -4580,
         3540
       ],
-      "id": "ec8049c1-2117-4e90-99c8-01562524502e",
+      "id": "fa7fdea2-32b5-4673-b487-f1d495a22ec9",
       "name": "CodeRandom3"
     },
     {
@@ -6663,9 +6326,9 @@
         -4600,
         3320
       ],
-      "id": "d89b6dcc-0424-4086-8dc9-4723c0bf9f22",
+      "id": "6ccf4734-8fa8-4c0e-b1fe-19b3cc2b8f8d",
       "name": "Mes_Filter_Vi1",
-      "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
+      "webhookId": "b92cfb0e-0616-42d7-9fb9-c3c05dc07ed3",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -6765,9 +6428,9 @@
         -4320,
         3540
       ],
-      "id": "4c2d2722-3223-4528-9c0e-87f999e3eb0a",
+      "id": "a60561d5-add1-41b3-972c-8c981df211fb",
       "name": "Mes_Filter_EN1",
-      "webhookId": "80d77a2b-b6f1-44bb-8804-c02e7c1a3f01",
+      "webhookId": "0c8fae5c-5575-4a92-b6a9-254c37cd88a2",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -6806,7 +6469,7 @@
         -5020,
         4260
       ],
-      "id": "c852e51d-c86f-464c-9c04-9afc1df4ea7c",
+      "id": "a3725474-0cd2-431a-8fd8-55b2341b66d9",
       "name": "If17"
     },
     {
@@ -6931,9 +6594,9 @@
         -4800,
         4240
       ],
-      "id": "d5557f28-574f-43a9-be3a-b27be2116766",
+      "id": "a004fc3f-317d-45f1-8454-ac6cdc34cfde",
       "name": "Telegram29",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "d5df8205-2ab4-4a84-a3f7-1723bade05a1",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7063,9 +6726,9 @@
         -5060,
         4080
       ],
-      "id": "f8040f15-b9d7-497c-b0cc-d0f38be09b9b",
+      "id": "70f2f982-3e1a-49f8-b477-3461a3c82f24",
       "name": "Telegram30",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "b845706e-9ccd-4e7b-bb7f-efda7f92845e",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7104,7 +6767,7 @@
         -5620,
         5500
       ],
-      "id": "13ae0e06-f47b-4ad8-836c-84f9086b8a36",
+      "id": "e28e0365-5519-4a31-ac21-e5120105f1f9",
       "name": "If18"
     },
     {
@@ -7205,9 +6868,9 @@
         -5440,
         5480
       ],
-      "id": "c9668b24-2171-4728-bd95-38df94b618c9",
+      "id": "25d3ec5d-c0c1-44d1-ba41-336e80e58bc6",
       "name": "Telegram31",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "d2c53091-e9e7-42cd-a304-bb71c6956dbc",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7313,9 +6976,9 @@
         -5580,
         5340
       ],
-      "id": "c1f865b6-5568-4e7e-8e1a-0dc858a0f3e2",
+      "id": "edccbdb3-27ec-4830-979a-095808c1918f",
       "name": "Telegram32",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "b37cb9eb-d3a2-4e1b-b4c4-1474de08535a",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7354,7 +7017,7 @@
         -5440,
         4980
       ],
-      "id": "de67bb3f-21c8-4b19-b724-4a1ead1b8181",
+      "id": "97452a20-6f67-41f2-ac92-5279e9568fe5",
       "name": "If19"
     },
     {
@@ -7443,9 +7106,9 @@
         -5240,
         4960
       ],
-      "id": "2748e9a2-9df1-42ac-84b1-ff8934b7fd97",
+      "id": "09ce8d34-7ba5-47d0-90d7-56653f9d70e6",
       "name": "Telegram33",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "435996df-be3a-4cf4-8a2d-05b7bd97d753",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7539,9 +7202,9 @@
         -5540,
         4820
       ],
-      "id": "695dd2a5-01db-40d3-9de9-ffe05fbc8d91",
+      "id": "ea3d0f79-62fd-4f1d-bcdd-e389d5b481c4",
       "name": "Telegram34",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "15fe2555-b56f-4f1d-ace9-5afec6184a17",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7580,7 +7243,7 @@
         -5700,
         5980
       ],
-      "id": "07481732-9319-4ecc-aefc-8c20d1e548b1",
+      "id": "e27953d7-e79f-4cff-af49-41c244c9fbed",
       "name": "If20"
     },
     {
@@ -7645,9 +7308,9 @@
         -5520,
         5960
       ],
-      "id": "4c950c33-14fa-4ae2-92aa-57e448e3363b",
+      "id": "85b6534c-61ab-493c-a312-ce8bcf34d4f5",
       "name": "Telegram35",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "28883fa4-e4bd-42a8-a844-28d307e10680",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7717,9 +7380,9 @@
         -5760,
         5780
       ],
-      "id": "79984441-af90-4f95-a74d-32184baed173",
+      "id": "8ddef13f-df23-40be-85fa-85384485f237",
       "name": "Telegram36",
-      "webhookId": "2d004037-e0c2-4a0a-ae7e-c7e09dfcbeff",
+      "webhookId": "bdfd3cdd-5a3e-4b9f-907b-e22d87e3c10d",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -7861,7 +7524,7 @@
         -5520,
         4280
       ],
-      "id": "f0cb7d71-7922-4eb8-bd7b-01fda5d21d44",
+      "id": "cab9c4d3-84a1-4f96-94e8-28ca27bc6e05",
       "name": "Switch-Account"
     },
     {
@@ -7877,7 +7540,7 @@
         -5760,
         3260
       ],
-      "id": "364f757a-199e-422e-a8e8-cbdcfbb52d6c",
+      "id": "a9ca3a20-3afc-41a8-9553-60b1faabd185",
       "name": "Sticky Note3"
     },
     {
@@ -7893,7 +7556,7 @@
         -5020,
         3260
       ],
-      "id": "9933ffd2-1c3c-446c-ad92-48b427cc641d",
+      "id": "5b4fc5b9-7243-420c-b917-9a0fd4237d94",
       "name": "Sticky Note11"
     },
     {
@@ -7909,7 +7572,7 @@
         -4000,
         3260
       ],
-      "id": "e119884b-5b67-4b32-8408-53f81c7d7d76",
+      "id": "731bb747-518f-4276-a512-1c7f216d9791",
       "name": "Sticky Note15"
     },
     {
@@ -7925,7 +7588,7 @@
         -3240,
         3260
       ],
-      "id": "7b3aefa9-f45a-4592-8cfc-b10b8b3d22f4",
+      "id": "ab67029e-b46f-46a6-900f-5eb57e65557e",
       "name": "Sticky Note20"
     },
     {
@@ -7941,7 +7604,7 @@
         -2500,
         3260
       ],
-      "id": "ba68a50d-68f0-45e1-a346-2e65b4574d3e",
+      "id": "b2ce9ad4-d34a-41ab-83f8-3cfb0b29430b",
       "name": "Sticky Note22"
     },
     {
@@ -7957,7 +7620,7 @@
         -5980,
         3980
       ],
-      "id": "ff6d8e19-f38e-4a69-a93c-b7333c465b7b",
+      "id": "744c7c41-a58d-42a6-bb37-56c70b9a55f0",
       "name": "Sticky Note23"
     },
     {
@@ -7973,7 +7636,7 @@
         -4440,
         4640
       ],
-      "id": "ca36ade3-0314-4ce3-b615-e27f5fe0d818",
+      "id": "1b337295-f45b-4c20-b12e-5b498acc28d2",
       "name": "Sticky Note24"
     },
     {
@@ -7988,7 +7651,7 @@
         2280,
         2500
       ],
-      "id": "771ba095-efd7-4b96-a907-cc59487111e6",
+      "id": "81857929-3518-4d52-ae6b-7a2d83ed58bc",
       "name": "check_exist",
       "alwaysOutputData": true,
       "credentials": {
@@ -8092,7 +7755,7 @@
         2380,
         1320
       ],
-      "id": "117d7704-d4d8-4f47-ba48-06e458a8c31f",
+      "id": "6851edf1-987d-400e-a11d-4f3fbce71d9b",
       "name": "Postgres1",
       "credentials": {
         "postgres": {
@@ -8104,7 +7767,7 @@
     {
       "parameters": {
         "operation": "executeQuery",
-        "query": "SELECT * FROM user_questions WHERE chat_id = 7860424712 and message_id = 5010",
+        "query": "SELECT selected_questions FROM user_questions WHERE chat_id = {{ $('Telegram Trigger').item.json.callback_query.message.chat.id }} and message_id = {{ $('Telegram Trigger').item.json.callback_query.message.message_id }}",
         "options": {}
       },
       "type": "n8n-nodes-base.postgres",
@@ -8113,7 +7776,7 @@
         -1720,
         1960
       ],
-      "id": "6be0a397-62e4-4b86-94a7-dacfe2d5915b",
+      "id": "c7444056-4407-48d0-862f-e6caec5a3980",
       "name": "ExecuteQuestions",
       "credentials": {
         "postgres": {
@@ -8124,21 +7787,22 @@
     },
     {
       "parameters": {
-        "chatId": "={{ $json.message.chat.id }}",
+        "chatId": "={{ $('Telegram Trigger').item.json.callback_query.from.id }}",
         "text": "Typing...",
         "additionalFields": {
-          "appendAttribution": false
+          "appendAttribution": false,
+          "parse_mode": "HTML"
         }
       },
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -1460,
+        -1240,
         1960
       ],
-      "id": "cfdbb763-e92c-4005-a748-9cb4d9b44ba9",
+      "id": "1fb6ec34-3259-40ed-a41f-28b981435890",
       "name": "Telegram37",
-      "webhookId": "a8c67252-0436-4e80-b080-49391d923525",
+      "webhookId": "eecaad9f-63b6-4eb0-bcae-b9ec1bf713df",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -8149,18 +7813,18 @@
     {
       "parameters": {
         "operation": "deleteMessage",
-        "chatId": "={{ $('Telegram27').item.json.result.chat.id }}",
-        "messageId": "={{ $('Telegram27').item.json.result.message_id }}"
+        "chatId": "={{ $('Telegram37').item.json.result.chat.id }}",
+        "messageId": "={{ $('Telegram37').item.json.result.message_id }}"
       },
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        -820,
+        -600,
         1960
       ],
-      "id": "1faed699-1dbb-43d5-8a5e-ac677a9b7b24",
+      "id": "2b735537-80f4-4699-848d-006f51d730a0",
       "name": "Telegram38",
-      "webhookId": "c0ed9ff5-579d-434d-bd96-01ee34a7c79b",
+      "webhookId": "4628e7af-4c1a-44b9-9273-d59f98804f8a",
       "credentials": {
         "telegramApi": {
           "id": "Jo4kWcVNJK0H8Qnp",
@@ -8181,8 +7845,241 @@
         -1820,
         1820
       ],
-      "id": "7b31ef3a-eef9-436b-8618-a1d57bfee4bd",
+      "id": "22e03570-0a8d-4b5d-bc93-2a2798a418bc",
       "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $('Telegram Trigger').first().json.callback_query.data;\n\nconst index = parseInt(data.split('_')[1]);\n\nconst selectedQuestions = $input.first().json.selected_questions;\n\nconst result = selectedQuestions[index];\n\nreturn [{ json: { question: result } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1500,
+        1960
+      ],
+      "id": "52e35e13-a98b-4bba-a1af-e56e82e3b080",
+      "name": "Code7"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        2320
+      ],
+      "id": "c6ae3746-fc3a-4222-8a19-ffe180e575eb",
+      "name": "Embeddings Ollama",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        2300
+      ],
+      "id": "5f7360a7-c61c-4ec5-a960-bbfd87f31b22",
+      "name": "Ollama Chat Model",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -960,
+        2080
+      ],
+      "id": "5d67adb4-401b-498c-8b93-b80ba057b00e",
+      "name": "Ollama Chat Model1",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        2600,
+        3160
+      ],
+      "id": "e2b16bf7-9f9b-41e1-9b96-4ccbed9ce158",
+      "name": "Ollama Chat Model2",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        3180,
+        3400
+      ],
+      "id": "d6a6d601-2326-4402-aa42-334134e8d1b4",
+      "name": "Ollama Chat Model3",
+      "disabled": true
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
+      "typeVersion": 1,
+      "position": [
+        2600,
+        3400
+      ],
+      "id": "d7f773a8-5790-453e-80dd-196d5bc77cf6",
+      "name": "Embeddings Ollama1",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -3040,
+        5120
+      ],
+      "id": "f5270baf-a9f0-46a6-9a40-d79c60b007a0",
+      "name": "Ollama Chat Model4",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2980,
+        6840
+      ],
+      "id": "8265ff73-38d9-440c-b7cb-01015f55870c",
+      "name": "Ollama Chat Model5",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2960,
+        7180
+      ],
+      "id": "63fc2d6a-3711-4cd8-973e-2748b303c196",
+      "name": "Ollama Chat Model6",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2960,
+        7500
+      ],
+      "id": "48cd8380-54fd-4309-9dc6-2f088c770a09",
+      "name": "Ollama Chat Model7",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2920,
+        7940
+      ],
+      "id": "94ab877a-2fcd-43bc-8db0-5a3d38a76771",
+      "name": "Ollama Chat Model8",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2920,
+        8260
+      ],
+      "id": "28054ae1-2169-46bf-bf30-0f63a9bd46f7",
+      "name": "Ollama Chat Model9",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2980,
+        6100
+      ],
+      "id": "566fd6b1-8391-4945-af46-22c96d903875",
+      "name": "Ollama Chat Model10",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2980,
+        6440
+      ],
+      "id": "eed267b7-d9b8-4220-96e8-2d99b1291a79",
+      "name": "Ollama Chat Model11",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2980,
+        5460
+      ],
+      "id": "ece74c48-09d6-44d7-b3d1-29e55a975a83",
+      "name": "Ollama Chat Model12",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        -2900,
+        5760
+      ],
+      "id": "273e8078-e4a2-41d0-9a2e-e094d8f7577f",
+      "name": "Ollama Chat Model13",
+      "disabled": true
     }
   ],
   "pinData": {},
@@ -8260,17 +8157,6 @@
           {
             "node": "Telegram28",
             "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Embeddings Google Gemini": {
-      "ai_embedding": [
-        [
-          {
-            "node": "Supabase Vector Store",
-            "type": "ai_embedding",
             "index": 0
           }
         ]
@@ -8423,28 +8309,6 @@
           {
             "node": "check_exist",
             "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model1": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -8911,26 +8775,9 @@
         ]
       ]
     },
-    "Google Gemini Chat Model2": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Retrieve Documents",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Retrieve Documents1": {
       "ai_tool": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
+        []
       ]
     },
     "Supabase Vector Store1": {
@@ -8939,28 +8786,6 @@
           {
             "node": "Retrieve Documents1",
             "type": "ai_vectorStore",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Embeddings Google Gemini1": {
-      "ai_embedding": [
-        [
-          {
-            "node": "Supabase Vector Store1",
-            "type": "ai_embedding",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model3": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Retrieve Documents1",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -9056,34 +8881,12 @@
         ]
       ]
     },
-    "Code5": {
-      "main": [
-        [
-          {
-            "node": "Message_Response1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "HTTP Request": {
       "ai_tool": [
         [
           {
             "node": "AI Agent3",
             "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model6": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent3",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -9106,17 +8909,6 @@
           {
             "node": "AI Agent4",
             "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model7": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent4",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -9150,17 +8942,6 @@
           {
             "node": "AI Agent5",
             "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model8": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent5",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -9210,17 +8991,6 @@
         ]
       ]
     },
-    "Google Gemini Chat Model9": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent6",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "If13": {
       "main": [
         [
@@ -9261,17 +9031,6 @@
         ]
       ]
     },
-    "Google Gemini Chat Model10": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent7",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "AI Agent8": {
       "main": [
         [
@@ -9289,17 +9048,6 @@
           {
             "node": "AI Agent8",
             "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model11": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent8",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -9333,17 +9081,6 @@
           {
             "node": "AI Agent9",
             "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model12": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent9",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -9400,17 +9137,6 @@
         ]
       ]
     },
-    "Google Gemini Chat Model13": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent10",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "AI Agent11": {
       "main": [
         [
@@ -9428,17 +9154,6 @@
           {
             "node": "AI Agent11",
             "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model14": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent11",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -9472,17 +9187,6 @@
           {
             "node": "AI Agent12",
             "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model15": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent12",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -10089,7 +9793,7 @@
       "main": [
         [
           {
-            "node": "Telegram37",
+            "node": "Code7",
             "type": "main",
             "index": 0
           }
@@ -10122,8 +9826,195 @@
       "main": [
         [
           {
-            "node": "Code5",
+            "node": "Message_Response1",
             "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code7": {
+      "main": [
+        [
+          {
+            "node": "Telegram37",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Ollama": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Supabase Vector Store1",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Retrieve Documents1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Retrieve Documents",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Embeddings Ollama1": {
+      "ai_embedding": [
+        [
+          {
+            "node": "Supabase Vector Store",
+            "type": "ai_embedding",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model4": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model12": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent3",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model13": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model10": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent6",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model11": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent12",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model5": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent9",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model6": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent7",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model7": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent8",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model8": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent10",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model9": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent11",
+            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -10134,11 +10025,24 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "387c2874-a730-4e4d-8203-0d50001282e1",
+  "versionId": "0c3bebaa-bb7c-4b9e-9491-96568bd758fe",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "ddc78abf6d26c6050fafb0ba452cf56a55cb8482e5cde128d75a821055f99c24"
   },
-  "id": "NFI6sk77FTN9AWkf",
-  "tags": []
+  "id": "u1K0aAiIBZaCxNSS",
+  "tags": [
+    {
+      "createdAt": "2025-05-28T16:33:50.281Z",
+      "updatedAt": "2025-05-28T16:33:50.281Z",
+      "id": "nFCOvmvILXOLrinD",
+      "name": "Backup"
+    },
+    {
+      "createdAt": "2025-05-28T16:34:00.056Z",
+      "updatedAt": "2025-05-28T16:34:00.056Z",
+      "id": "uqZbfO91vYEeojaD",
+      "name": "Chatbot"
+    }
+  ]
 }
